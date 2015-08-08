@@ -16,7 +16,7 @@ def jira_rank
 
   g = (Math.log(Math.log(@x))*(@y)) + (10/@z)
 
-  puts "Users effected: #{@x}, hours effected: #{@y}, hours of work: #{@z}, story points are: #{g.round(4)}"
+  puts %<{"body": "Users effected: #{@x}, hours effected: #{@y}, hours of work: #{@z}, story points are: #{g.round(4)}"}>
 
  end
 
