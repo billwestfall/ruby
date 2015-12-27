@@ -5,7 +5,7 @@
 # You gobbled 1 apples
 # MacBook-Air:lambda billw$
 
-eat = require 'rubygems'
+require 'rubygems'
 require 'highline/import'
 
 n = 4
