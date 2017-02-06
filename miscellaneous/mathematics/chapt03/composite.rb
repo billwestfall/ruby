@@ -5,7 +5,7 @@ limit = 12
 
 i=0
  while i < 12
-   x = 2 ** (i)
+   x = 2 ** (i) + 1
 puts x
 i = i + 1
 sleep 3 

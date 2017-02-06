@@ -1,7 +1,7 @@
 #!/Users/billw/.rvm/rubies/ruby-2.1.2/bin/ruby
 # calculate the Fermat number out to limit
 
-limit=12
+limit=5
 
 i=0
  while i < limit
