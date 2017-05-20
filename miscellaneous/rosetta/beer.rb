@@ -3,7 +3,7 @@
 $beer = 99
 
 while $beer > 1
-  puts $beer
+  puts $beer " beers"
 #else
 #  puts "done"
   
