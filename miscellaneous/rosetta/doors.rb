@@ -8,4 +8,5 @@ while $doors > 0
   puts ("The prize is behind door " $prize)
   else
   $doors = $doors -=1
+  end
 end
