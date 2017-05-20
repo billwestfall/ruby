@@ -1,11 +1,11 @@
 # taking the 99 bottles of beer challenge in Ruby
 
-beer = 99
+$beer = 99
 
-while beer > 1
-  puts beer
-else
-  puts "done"
+while $beer > 1
+  puts $beer
+#else
+#  puts "done"
   
-  beer = beer - 1
+  $beer = $beer -=1
 end
