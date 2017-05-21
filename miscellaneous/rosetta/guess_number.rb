@@ -5,7 +5,7 @@ puts $computer
 
 puts "Please enter a number between 1 and 10"
 guess = gets.chomp
-comp_no = computer.to_i
+comp_no = $computer.to_i
 guess_no = guess.to_i
   if $comp_no = $guess_no
   puts ("You guessed the right number #$comp_no")
