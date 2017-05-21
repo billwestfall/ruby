@@ -1,5 +1,7 @@
 
 # trying to solve the Babbage problem in Ruby
+# run as ruby babbage.rb 
+# The Babbage number is 25264 and the root is 638269696
 
 $i = 1
 
