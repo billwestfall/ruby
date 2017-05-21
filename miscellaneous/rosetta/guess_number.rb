@@ -1,11 +1,9 @@
-# guess a number between 1 and 10
+# guess a number between 0 and 10
 
 $computer = Random.rand(10)
-puts $computer
 
-puts "Please enter a number between 1 and 10"
+puts "Please enter a number between 0 and 10"
 $guess = gets.chomp
-puts $guess
 $comp_no = $computer.to_i
 $guess_no = $guess.to_i
   if $comp_no == $guess_no
