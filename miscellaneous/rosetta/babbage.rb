@@ -5,7 +5,7 @@ $i = 1
 
 while $i > 0
   $babbage = $i * $i
-  if $babbage.to_i.include? 269696
+  if $babbage.to_s.include? "269696"
   puts ("The Babbage number is #$babbage")
     break
   else
