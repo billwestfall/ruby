@@ -1,6 +1,7 @@
 # guess a number between 1 and 10
 
 computer = Random.rand(10)
+puts $computer
 
 puts "Please enter a number between 1 and 10"
 guess = gets.chomp
