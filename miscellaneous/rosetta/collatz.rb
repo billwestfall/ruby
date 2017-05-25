@@ -11,4 +11,4 @@ while $my_no != 1
   $my_no = (3 * $my_no) + 1
     puts $my_no
   end
-end while $my_no = 1
+end
