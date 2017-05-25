@@ -9,5 +9,6 @@ while $my_num != 1
   puts $my_no
   else
   $my_no = (3 * $my_no) + 1
+    puts $my_no
   end
 end
