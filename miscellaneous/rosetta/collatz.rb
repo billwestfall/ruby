@@ -11,4 +11,4 @@ while $my_num.to_i != 1
   $my_no = (3 * $my_no) + 1
     puts $my_no
   end
-end
+end while $my_num.to_i = 1
