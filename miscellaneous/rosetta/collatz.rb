@@ -1,6 +1,6 @@
 # generate collatz number 
 
-puts "Please enter an integer"
+puts "Please enter a positive integer"
 $my_num = gets.chomp
 $my_no = $my_num.to_i
 while $my_no != 1
