@@ -7,7 +7,7 @@ end
 
 root = TkRoot.new
 btn_OK = TkButton.new(root) do
-   text "OK"
+   text "click me"
    borderwidth 5
    underline 0
    state "normal"
