@@ -1,11 +1,11 @@
 Given(/^a greeter$/) do
-  pending # Write code here that turns the phrase above into concrete actions
+  @greeter = CucumberGreeter.new
 end
 
 When(/^I send it the greet message$/) do
-  pending # Write code here that turns the phrase above into concrete actions
+  @message = @greeter.greet
 end
 
-Then(/^I should see "([^"]*)"$/) do |arg1|
-  pending # Write code here that turns the phrase above into concrete actions
+Then(/^I should see "([^"]*)"$/) do |greeting|
+  @message.should == greeting
 end
