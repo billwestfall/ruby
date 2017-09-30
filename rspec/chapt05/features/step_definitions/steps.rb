@@ -1,5 +1,4 @@
 
-
 Given(/^I am not yet playing$/) do
 
 end
@@ -10,7 +9,7 @@ When(/^I start a new game$/) do
 end
 
 Then(/^I should see "([^"]*)"$/) do |message|
-  output.messages.should include(message)
+  output_double.messages.should include(message)
 end
 
 Given(/^the secret code is "([^"]*)"$/) do |arg1|
