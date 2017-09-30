@@ -6,6 +6,7 @@ end
 When(/^I start a new game$/) do
   @messenger = StringIO.new
   game = Codebreaker::Game.new(@messenger)
+  puts('Welcome to Codebreaker!')
   game.start
 end
 
