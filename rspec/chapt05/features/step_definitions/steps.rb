@@ -4,7 +4,8 @@ Given(/^I am not yet playing$/) do
 end
 
 When(/^I start a new game$/) do
-  game = Codebreaker::Game.new(output)
+  @messenger = StringIO.new
+  game = Codebreaker::Game.new(@messenger)
   game.start
 end
 
