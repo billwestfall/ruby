@@ -1,13 +1,12 @@
-class Output
-  def messages
-    @messages ||= []
+  class OutputDouble
+    def messages
+      @messages ||= []
+    end
+    def puts(message)
+      messages << message
+    end
   end
-  
-  def puts(message)
-    messages << message
-  end
-end
 
-  def output
-    @output ||= Output.new
+  def output_double
+    @output ||= OutputDouble.new
   end
