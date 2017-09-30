@@ -6,8 +6,8 @@ When(/^I start a new game$/) do
   Codebreaker::Game.new.start
 end
 
-Then(/^I should see "([^"]*)"$/) do |arg1|
-
+Then(/^I should see "([^"]*)"$/) do |message|
+  output.messages.should include(message)
 end
 
 Given(/^the secret code is "([^"]*)"$/) do |arg1|
