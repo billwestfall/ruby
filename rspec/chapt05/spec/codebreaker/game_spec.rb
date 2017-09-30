@@ -12,7 +12,14 @@ module Codebreaker
         game.start
       end
       
-      it "prompts for the first guess"
+      it "prompts for the first guess" do
+        output = double('output')
+        gane = Game.new(output)
+        
+        output.should_receive(:puts).with('Enter guess:')
+        
+        games.start
+      end
     end
   end
 end
