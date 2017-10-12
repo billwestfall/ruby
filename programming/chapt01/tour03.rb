@@ -9,3 +9,16 @@ else nil
 end
 
 generation(1964)
+
+def are_you_sure?
+  while true
+    puts("Are your sure? [y/n]: ")
+    response = gets
+    case response
+      when /^[yY]/
+      return true
+      when /^[nN]/, /^$/
+      return false
+    end
+  end
+end
