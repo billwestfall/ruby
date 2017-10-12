@@ -10,3 +10,9 @@ puts("Ruby!"*3)
 puts("%d %s" % [3, "rubies"])
 max = x > y ? x : y
 puts(max)
+
+def square(x)
+  x*x
+end
+
+puts(square(5))
