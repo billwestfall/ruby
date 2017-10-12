@@ -17,8 +17,10 @@ def are_you_sure?
     case response
       when /^[yY]/
       return true
+      puts("true")
       when /^[nN]/, /^$/
       return false
+      puts("false")
     end
   end
 end
