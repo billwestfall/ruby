@@ -20,3 +20,21 @@ a.inject do |sum,x|
   puts(x)
   sum + x
 end
+
+h = {
+  :one => 1,
+  :two => 2
+  }
+h[:one]
+h[:three] = 3
+h.each do |key,value|
+  puts("#{value}:#{key}")
+end
+
+file.open("README.md") do |f|
+  line = f.readline
+end
+
+t = Thread.new do
+  File.read("README.md")
+end
