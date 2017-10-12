@@ -31,7 +31,7 @@ h.each do |key,value|
   puts("#{value}:#{key}")
 end
 
-file.open("README.md") do |f|
+File.open("README.md") do |f|
   line = f.readline
 end
 
