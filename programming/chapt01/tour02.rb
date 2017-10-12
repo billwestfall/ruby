@@ -16,3 +16,10 @@ def square(x)
 end
 
 puts(square(5))
+
+
+def Math.square(x)
+  x*x
+end
+
+puts(Math.square(6))
