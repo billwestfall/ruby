@@ -16,11 +16,11 @@ def are_you_sure?
     response = gets
     case response
       when /^[yY]/
-      return true
       puts("true")
+      return true
       when /^[nN]/, /^$/
-      return false
       puts("false")
+      return false
     end
   end
 end
