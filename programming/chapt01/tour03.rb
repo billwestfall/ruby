@@ -22,3 +22,5 @@ def are_you_sure?
     end
   end
 end
+
+are_you_sure?
