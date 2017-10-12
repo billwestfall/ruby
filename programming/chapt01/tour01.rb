@@ -33,6 +33,7 @@ end
 
 File.open("README.md") do |f|
   line = f.readline
+  puts(line)
 end
 
 t = Thread.new do
