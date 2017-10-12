@@ -16,5 +16,7 @@ a = [1, 2, 3, 4]
 b = a.map {|x| x*x}
 c = a.select {|x| x%2==0 }
 a.inject do |sum,x|
+  puts(sum)
+  puts(x)
   sum + x
 end
