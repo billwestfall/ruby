@@ -26,3 +26,15 @@ def are_you_sure?
 end
 
 are_you_sure?
+
+class Sequence
+  include Enumerable
+  def intialize(from, to, by)
+    @from, @to, @by = from, to, by
+  end
+  
+  def each
+    x = @from
+    while x <= @to
+      yield x
+      x += @by
