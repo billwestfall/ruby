@@ -38,3 +38,16 @@ class Sequence
     while x <= @to
       yield x
       x += @by
+    end
+  end
+  
+  def length
+    return 0 if @from > @to
+    Integer((@to-@from)/@by) + 1
+  end
+  
+  alias size length
+  
+  def[](index)
+    return nil if index < 0
+    v = 
