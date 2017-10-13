@@ -50,4 +50,15 @@ class Sequence
   
   def[](index)
     return nil if index < 0
-    v = 
+    v = @from + index*@by
+    if v <= @to
+      v
+    else
+      nil
+    end
+  end
+  
+  s = Sequence.new(1, 10, 2)
+  s.each {|x| print x}
+  print s[s.size-1]
+  t = (s+1)*2
