@@ -73,4 +73,4 @@ class Sequence
     end
   end
   
-  Sequences.fromtoby(1, 10, 2) {|x| print x}
+  Sequences.fromtoby(1, 10, 2) {|x| print x} end
