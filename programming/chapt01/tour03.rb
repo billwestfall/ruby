@@ -58,7 +58,19 @@ class Sequence
     end
   end
   
-  s = Sequence.new(1, 10, 2)
-  s.each {|x| print x}
-  print s[s.size-1]
-  t = (s+1)*2
+  #s = Sequence.new(1, 10, 2)
+  #s.each {|x| print x}
+  #print s[s.size-1]
+  #t = (s+1)*2
+
+  module Sequences
+    def self.fromtoby(from, to, by)
+      x = from
+      while x <= to
+        yield x
+        x += by
+      end
+    end
+  end
+  
+  Sequences.fromtoby(1, 10, 2) {|x| print x}
