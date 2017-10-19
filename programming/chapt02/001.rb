@@ -18,3 +18,16 @@ animals = Array.new
   .sort
 
 puts(animals)
+
+x = 0
+if x < 10 then
+  puts(x)
+  x = x + 1
+end
+  
+x = 0
+while x < 10 do
+  puts(x)
+  x = x + 1
+end
+  
