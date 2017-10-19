@@ -8,6 +8,7 @@ q,r = 10.divmod 3
 puts(q)
 puts(r)
 
+x=2
 puts( x**4 )
 puts( x**-1 )
 puts( x**(1/3.0) )
