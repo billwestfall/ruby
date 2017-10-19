@@ -31,3 +31,8 @@ while x < 10 do
   x = x + 1
 end
   
+3.times { print "Ruby! " }
+  
+1.upto(10) do |x|
+  print x
+end
