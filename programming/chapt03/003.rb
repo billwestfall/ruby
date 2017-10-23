@@ -7,6 +7,7 @@ while i < 5000
   b = my_charb.shift.strip
   print(a)
   print(b)
+  print(c)
 #  sleep 2
   i = i + 1
 end
