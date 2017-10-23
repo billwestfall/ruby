@@ -5,6 +5,7 @@ while i < 5000
   my_charc=[*"\u3040".."\u30FF"].sample(1)
   a = my_char.shift.strip
   b = my_charb.shift.strip
+  c = my_charc.shift.strip
   print(a)
   print(b)
   print(c)
