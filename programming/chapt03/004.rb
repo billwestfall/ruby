@@ -18,3 +18,7 @@ alphabet << 67
 puts(alphabet)
 alphabet << 256
 puts(alphabet)
+ellipsis = '.'*3
+puts(ellipsis)
+a = 0;
+puts("#{a=a+1} " * 3)
