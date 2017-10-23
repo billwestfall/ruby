@@ -13,7 +13,7 @@ puts(greeting)
 alphabet="A"
 puts(alphabet)
 alphabet << ?B
-puts(alohabet)
+puts(alphabet)
 alphabet << 67
 puts(alphabet)
 alphabet << 256
