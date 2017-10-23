@@ -6,4 +6,4 @@ puts(b)
 planet="earth"
 puts("Hello " + planet)
 puts("Hello planet #" + planet.to_s)
-puts("Hello planet ##{planet_number})
+puts("Hello planet ##{planet_number}")
