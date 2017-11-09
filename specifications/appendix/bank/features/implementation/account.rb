@@ -1,14 +1,17 @@
- class Account
-          def initialize
-            @balance = 0
+class Account
+  def initialize
+    @balance = 0
 end
-          def balance
-            @balance
+  def balance
+    @balance
 end
-          def balance=(balance)
-            @balance = balance
+  def balance=(balance)
+    @balance = balance
 end
-          def deposit(transfer)
-            @balance += transfer
-          end
-        end
+  def deposit(transfer)
+    @balance += transfer
+end
+  def withdraw(transfer)
+    @balance -= transfer
+  end 
+end
