@@ -1,3 +1,5 @@
+require "rspec/expectations"
+
 Given(/^a bank account in Simona's name$/) do
   pending # Write code here that turns the phrase above into concrete actions
 end
