@@ -20,3 +20,7 @@ end
 Then(/^the account balance should be \$(\d+)$/) do |final_balance|
   expect(@simona.account.balance).to eq final_balance.to_i
 end
+
+When(/^she withdraws \$(\d+)$/) do |arg1|
+  @simona.account.withdraw(arg1.to_i)
+end
