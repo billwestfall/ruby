@@ -4,5 +4,11 @@ class Client
   end
   def name
     @name
-  end 
+  end
+  def account=(account)
+    @account = account
 end
+          def account
+            @account
+          end
+        end
