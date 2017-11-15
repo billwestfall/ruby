@@ -1,4 +1,4 @@
-Given(/^Mike, a member fo our team$/) do
+Given(/^Mike, a member of our team$/) do
   puts("Mike")
 end
 
@@ -20,4 +20,12 @@ end
 
 Then(/^the meeting will be removed from his calendar$/) do
   puts("gone")
+end
+
+And(/^that it's already 3 p\.m\./) do
+  puts("3pm")
+end
+
+Then(/^he shouldn't be able to save his meeting$/) do
+  puts("no_work")
 end
