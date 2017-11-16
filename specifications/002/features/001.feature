@@ -21,3 +21,10 @@ Feature:  Scheduling
   And that it's already 3 p.m.
   When Mike chooses 2 p.m. as a start time for his meeting
   Then he shouldn't be able to save his meeting
+
+  Scenario: Existing meeting
+
+  Given Mike, a member of our team
+  And that there's already a meeting at 2 p.m.
+  When Mike chooses 2 p.m. as a start time for his meeting
+  Then he shouldn't be able to save his meeting

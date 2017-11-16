@@ -29,3 +29,7 @@ end
 Then(/^he shouldn't be able to save his meeting$/) do
   puts("no_work")
 end
+
+Given(/^that there's already a meeting at 2 p\.m\./) do
+  puts("exists")
+end
