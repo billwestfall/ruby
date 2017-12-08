@@ -1,3 +1,7 @@
+Feature:  OK story
+
+  It's OK but not that great
+
 Scenario: Detect sentences that are too long
   Given text with a sentence that is too long:
     """

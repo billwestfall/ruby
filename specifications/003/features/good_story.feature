@@ -1,3 +1,7 @@
+Feature:  Best story
+
+  Best story format
+
 Scenario: Detect sentences that are too long
   The EDIT MODE highlights all the suggestions made by
   our text editor directly in the text.

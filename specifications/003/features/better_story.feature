@@ -1,3 +1,7 @@
+Feature:  Better story
+
+  Better than the OK story
+
 Scenario: Detect sentences that are too long
   When Vladimir writes a sentence that is too long:
     """
