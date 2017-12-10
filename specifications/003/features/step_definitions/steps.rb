@@ -81,3 +81,7 @@ end
 Then(/^the printer should print (\d+) low quality A(\d+) pages$/) do |arg1, arg2|
   puts("bad")
 end
+
+Given(/^Vladimir writes a sentence in his draft:$/) do |string|
+  puts("bad active")
+end
