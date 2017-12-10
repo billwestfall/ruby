@@ -117,3 +117,23 @@ end
 Then(/^the text stay as it was:$/) do |string|
   puts("thing")
 end
+
+Given(/^a draft of "([^"]*)"$/) do |arg1|
+  puts("abstraction")
+end
+
+When(/^Vladimir writes:$/) do |string|
+  puts("is")
+end
+
+When(/^he marks the paragraph as a H(\d+)$/) do |arg1|
+  puts("an important")
+end
+
+When(/^he writes:$/) do |string|
+  puts("thing")
+end
+
+Then(/^the new draft should replace the previous draft$/) do
+  puts("apparently")
+end
