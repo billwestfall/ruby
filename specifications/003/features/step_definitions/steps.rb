@@ -137,3 +137,7 @@ end
 Then(/^the new draft should replace the previous draft$/) do
   puts("apparently")
 end
+
+When(/^Vladimir makes a new revision$/) do
+  puts("yay abstraction")
+end
