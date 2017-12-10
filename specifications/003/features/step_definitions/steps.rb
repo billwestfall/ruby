@@ -85,3 +85,7 @@ end
 Given(/^Vladimir writes a sentence in his draft:$/) do |string|
   puts("bad active")
 end
+
+Given(/^text:$/) do |string|
+  puts("good passive")
+end
