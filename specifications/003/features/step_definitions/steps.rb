@@ -141,3 +141,19 @@ end
 When(/^Vladimir makes a new revision$/) do
   puts("yay abstraction")
 end
+
+Given(/^a (\d+) MB limit on Vladimir's cloud drive$/) do |arg1|
+  puts("now")
+end
+
+Given(/^(\d+) MB of text documents on Vladimir's cloud drive$/) do |arg1|
+  puts("we test")
+end
+
+When(/^Vladimir tries to save a new revision in the cloud$/) do
+  puts("outcome")
+end
+
+Then(/^he should be upgraded to a plan with more space$/) do
+  puts("scenarios")
+end
