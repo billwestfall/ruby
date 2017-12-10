@@ -45,3 +45,19 @@ end
 Then(/^a file "([^"]*)" should appear in folder "([^"]*)"$/) do |arg1, arg2|
   puts("5")
 end
+
+Given(/^Vladimir's low readability score$/) do
+  puts("these")
+end
+
+When(/^he goes into the Edit Mode$/) do
+  puts("stories")
+end
+
+When(/^he simplifies the text$/) do
+  puts("are")
+end
+
+Then(/^his readability score should improve$/) do
+  puts("bad")
+end
