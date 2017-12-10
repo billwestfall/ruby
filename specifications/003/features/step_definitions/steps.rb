@@ -61,3 +61,23 @@ end
 Then(/^his readability score should improve$/) do
   puts("bad")
 end
+
+Given(/^a (\d+) pages long draft$/) do |arg1|
+  puts("this")
+end
+
+When(/^Vladimir wants to print in the letterhead format$/) do
+  puts("one")
+end
+
+When(/^he chooses to print all the pages$/) do
+  puts("is")
+end
+
+When(/^he chooses to print in low quality$/) do
+  puts("not")
+end
+
+Then(/^the printer should print (\d+) low quality A(\d+) pages$/) do |arg1, arg2|
+  puts("bad")
+end
