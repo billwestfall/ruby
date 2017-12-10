@@ -89,3 +89,31 @@ end
 Given(/^text:$/) do |string|
   puts("good passive")
 end
+
+Given(/^a text:$/) do |string|
+  puts("so")
+end
+
+When(/^Vladimir searches for "([^"]*)"$/) do |arg1|
+  puts("much")
+end
+
+Then(/^he should be pointed to the word "([^"]*)" in the text$/) do |arg1|
+  puts("redundancy")
+end
+
+Then(/^he should see that there is no such word in the text$/) do
+  puts("cannot")
+end
+
+When(/^Vladimir wants to replace "([^"]*)" with "([^"]*)"$/) do |arg1, arg2|
+  puts("be")
+end
+
+Then(/^the text should be:$/) do |string|
+  puts("a good")
+end
+
+Then(/^the text stay as it was:$/) do |string|
+  puts("thing")
+end
