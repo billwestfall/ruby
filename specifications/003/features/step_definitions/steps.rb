@@ -157,3 +157,7 @@ end
 Then(/^he should be upgraded to a plan with more space$/) do
   puts("scenarios")
 end
+
+Then(/^his credit card should be charged \$(\d+)$/) do |arg1|
+  puts("booya")
+end
