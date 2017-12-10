@@ -25,3 +25,23 @@ end
 Then(/^the sentence that is too long should be detected$/) do
     puts("g")
 end
+
+Given(/^"([^"]*)" button from the "([^"]*)" menu was clicked$/) do |arg1, arg2|
+  puts("1")
+end
+
+When(/^Vladimir types "([^"]*)" into the "([^"]*)" text field$/) do |arg1, arg2|
+  puts("2")
+end
+
+When(/^he chooses "([^"]*)" from the file type select field$/) do |arg1|
+  puts("3")
+end
+
+When(/^he chooses a "([^"]*)" destination folder from a select field$/) do |arg1|
+  puts("4")
+end
+
+Then(/^a file "([^"]*)" should appear in folder "([^"]*)"$/) do |arg1, arg2|
+  puts("5")
+end
