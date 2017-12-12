@@ -33,3 +33,19 @@ end
 Given(/^an Audio CD book in Simona's cart$/) do
   puts("worse")
 end
+
+Given(/^a Audiobook book in Simona's cart$/) do
+  puts("audio")
+end
+
+Given(/^a Hardcover book in Simona's cart$/) do
+  puts("hardcover")
+end
+
+Given(/^a Paperback book in Simona's cart$/) do
+  puts("paperback")
+end
+
+Given(/^a Audio CD book in Simona's cart$/) do
+  puts("CD")
+end
