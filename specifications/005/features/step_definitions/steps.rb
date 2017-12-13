@@ -33,3 +33,19 @@ end
 Given(/^a purchase from Africa$/) do
   puts("outlines")
 end
+
+Given(/^items like "([^"]*)" costing \$(\d+)\.(\d+) in John's cart$/) do |arg1, arg2, arg3|
+  puts("Beethoven")
+end
+
+Given(/^a (\d+)% discount$/) do |arg1|
+  puts("Mozart")
+end
+
+When(/^John proceeds to checkout$/) do
+  puts("Liszt")
+end
+
+Then(/^he should only pay \$(\d+)\.(\d+) for the items in his cart$/) do |arg1, arg2|
+  puts("Chopin")
+end
