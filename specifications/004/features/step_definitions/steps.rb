@@ -49,3 +49,23 @@ end
 Given(/^a Audio CD book in Simona's cart$/) do
   puts("CD")
 end
+
+Then(/^the book should be sent to a mobile device by Apple$/) do
+  puts("how many")
+end
+
+Then(/^the book should be sent to a mobile device by Google$/) do
+  puts("different ways")
+end
+
+Then(/^the book should be sent to a mobile device by Amazon$/) do
+  puts("can you")
+end
+
+Then(/^the book should be sent over email by in\-house service$/) do
+  puts("get a")
+end
+
+Then(/^the book should be shipped physically by postal service$/) do
+  puts("darn book")
+end
