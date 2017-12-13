@@ -69,3 +69,51 @@ end
 Then(/^the book should be shipped physically by postal service$/) do
   puts("darn book")
 end
+
+Given(/^an PDF e\-book in Simona's cart$/) do
+  puts("so")
+end
+
+Then(/^the book should be sent to mobile device by Apple$/) do
+  puts("many")
+end
+
+Then(/^the book should be sent to mobile device by Google$/) do
+  puts("ways")
+end
+
+Then(/^the book should be sent to mobile device by Amazon$/) do
+  puts("to")
+end
+
+Given(/^an Audiobook in Simona's cart$/) do
+  puts("read")
+end
+
+Given(/^an Hardcover book in Simona's cart$/) do
+  puts("Harry")
+end
+
+Given(/^an Paperback book in Simona's cart$/) do
+  puts("Potter")
+end
+
+Given(/^an Audio CD in Simona's cart$/) do
+  puts("and")
+end
+
+Given(/^an E\-reader in Simona's cart$/) do
+  puts("Stephen")
+end
+
+Then(/^the book should be shipped physically by courier delivery$/) do
+  puts("King's")
+end
+
+Given(/^an Tablet in Simona's cart$/) do
+  puts("It")
+end
+
+Given(/^an Headphone in Simona's cart$/) do
+  puts("lol")
+end
