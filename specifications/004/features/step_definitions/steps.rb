@@ -117,3 +117,23 @@ end
 Given(/^an Headphone in Simona's cart$/) do
   puts("lol")
 end
+
+Given(/^an Movie in Simona's cart$/) do
+  puts("more")
+end
+
+Then(/^the book should be sent to iTunes by Apple$/) do
+  puts("scenarios")
+end
+
+Then(/^the book should be sent to Google Play by Google$/) do
+  puts("equals")
+end
+
+Then(/^the book should be sent to Fire TV by Amazon$/) do
+  puts("more")
+end
+
+Then(/^the book should be send download link to email by in\-house service$/) do
+  puts("goodness")
+end
