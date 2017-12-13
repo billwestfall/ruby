@@ -16,3 +16,8 @@ Feature: Pricing
       | "Writing Great Specifications" | $44.99 | 30%       | $31.49 |
       | "Writing Great Specifications" | $44.99 | 50%       | $22.49 |
       | "Writing Great Specifications" | $44.99 | 75%       | $11.24 |
+      
+     Examples: Bundles
+       We offer "buy two, pay for one" bundles.
+      | items                             | price  | discount | final  |
+      | "Specification by Example" bundle | $44.99 | 50%      | $22.49 |
