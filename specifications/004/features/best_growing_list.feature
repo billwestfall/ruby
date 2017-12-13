@@ -16,7 +16,7 @@ Feature: Shipping
       | PDF e-book | sent to mobile device | Amazon   |
       | Movie      | sent to Fire TV       | Amazon   |
 
-       Examples: Ship by sending a download link
+    Examples: Ship by sending a download link
       | item       | shipped                     | provider         |
       | Audiobook  | send download link to email | in-house service |
     Examples: Ship by a postal service
