@@ -6,21 +6,10 @@ Given a <format> book in Simona's cart
 
  Examples:
 | format                  | shipped                 | provider         |
-                          | sent to a mobile device | Apple            |
-                          | sent to a mobile device | Google           |
-
-| PDF
-| PDF
-| PDF
-| Audiobook
-| Hardcover
-| Paperback | shipped physically
-| Audio CD  | shipped physically
-| sent to a mobile device
-| sent over email
-| shipped physically
-| Amazon           |
-| in-house service |
-| postal service   |
-| postal service   |
-| postal service   |
+| PDF                     | sent to a mobile device | Apple            |
+| PDF                     | sent to a mobile device | Google           |
+| PDF                     | sent to a mobile device | Amazon           |
+| Audiobook               | sent over email         | in-house service |
+| Hardcover               | shipped physically      | postal service   |
+| Paperback               | shipped physically      | postal service   |
+| Audio CD                | shipped physically      | postal service   |
