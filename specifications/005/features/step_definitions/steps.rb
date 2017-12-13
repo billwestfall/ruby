@@ -53,3 +53,11 @@ end
 Given(/^items like "([^"]*)" bundle costing \$(\d+)\.(\d+) in John's cart$/) do |arg1, arg2, arg3|
   puts("Tschaikovsky")
 end
+
+Then(/^the order should technically be discounted to \$(\d+)\.(\d+)$/) do |arg1, arg2|
+  puts("Scriabin")
+end
+
+Then(/^the final price should be discounted even further to \$(\d+)\.(\d+)$/) do |arg1, arg2|
+  puts("Sorabji")
+end
