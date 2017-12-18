@@ -61,3 +61,15 @@ end
 Then(/^the final price should be discounted even further to \$(\d+)\.(\d+)$/) do |arg1, arg2|
   puts("Sorabji")
 end
+
+Given("items worth ${int} in John's cart") do |int|
+  puts("now")
+end
+
+Then("he should be offered free shipping") do
+  puts{"counterexamples"}
+end
+
+Then("he should be offered ${int} shipping") do |int|
+  puts("free hell yeah")
+end
