@@ -141,3 +141,48 @@ end
 Given("shipment to Japan") do
   puts("Japan")
 end
+
+Given("books:") do |table|
+  # table is a Cucumber::MultilineArgument::DataTable
+  puts("table")
+end
+
+When("Simona searches for title") do
+  puts("searches")
+end
+
+When("she wants to find {string}") do |string|
+  puts("find")
+end
+
+Then("she should see no results") do
+  puts("no results")
+end
+
+When("she wants to find {string} or {string}") do |string, string2|
+  puts("find or")
+end
+
+Then("she should see {string}, {string}") do |string, string2|
+  puts("see two strings")
+end
+
+When("Simona searches for genre") do
+  puts("genre")
+end
+
+When("she wants to find adventure") do
+  puts("adventure")
+end
+
+When("Simona searches for author and release") do
+  puts("author")
+end
+
+When("she wants to find Phan Uoc, {int}") do |int|
+  puts("Phan")
+end
+
+Then("she should see {string}") do |string|
+  puts("see string")
+end
