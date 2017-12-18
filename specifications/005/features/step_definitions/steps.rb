@@ -121,3 +121,23 @@ end
 Given("adults try to buy an R rated movie") do
   puts("l")
 end
+
+Given("shipment to US") do
+  puts("US")
+end
+
+Given("shipment to Canada") do
+  puts("Canada")
+end
+
+Given("shipment to Poland") do
+  puts("Canada")
+end
+
+Given("shipment to Egypt") do
+  puts("Egypt")
+end
+
+Given("shipment to Japan") do
+  puts("Japan")
+end
