@@ -73,3 +73,51 @@ end
 Then("he should be offered ${int} shipping") do |int|
   puts("free hell yeah")
 end
+
+Given("John adds an item to the cart") do
+  puts("a")
+end
+
+When("checkout proceeds") do
+  puts("b")
+end
+
+Then("the contents of the cart should be bought") do
+  puts("c")
+end
+
+Then("the credit card should be charged for it") do
+  puts("d")
+end
+
+Given("the item is in stock") do
+  puts("e")
+end
+
+Given("the item goes out of stock") do
+  puts("f")
+end
+
+Then("the contents of the cart should be not bought") do
+  puts("g")
+end
+
+Then("the credit card should be not charged for it") do
+  puts("h")
+end
+
+Given("John can pay") do
+  puts("i")
+end
+
+Given("John can't pay") do
+  puts("j")
+end
+
+Given("minors try to buy an R rated movie") do
+  puts("k")
+end
+
+Given("adults try to buy an R rated movie") do
+  puts("l")
+end
