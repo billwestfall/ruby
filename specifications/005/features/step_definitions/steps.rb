@@ -186,3 +186,53 @@ end
 Then("she should see {string}") do |string|
   puts("see string")
 end
+
+Given("customers:") do |table|
+  # table is a Cucumber::MultilineArgument::DataTable
+  puts("customers")
+end
+
+Given("items:") do |table|
+  # table is a Cucumber::MultilineArgument::DataTable
+  puts("items")
+end
+
+Given("publishers:") do |table|
+  # table is a Cucumber::MultilineArgument::DataTable
+  puts("publishers")
+end
+
+Given("publications:") do |table|
+  # table is a Cucumber::MultilineArgument::DataTable
+  puts("publications")
+end
+
+Given("authors:") do |table|
+  # table is a Cucumber::MultilineArgument::DataTable
+  puts("authors")
+end
+
+Given("book authored by:") do |table|
+  # table is a Cucumber::MultilineArgument::DataTable
+  puts("authored")
+end
+
+Given("customer {int} bought item {int}") do |int, int2|
+  puts("bought")
+end
+
+When("the customer gives the item {int} stars") do |int|
+  puts("stars")
+end
+
+Then("we should ask_how_can_we_improve") do
+  puts("improve")
+end
+
+Then("we should do_nothing") do
+  puts("nothing")
+end
+
+Then("we should ask_for_recommendation") do
+  puts("recommendation")
+end
