@@ -256,3 +256,19 @@ end
 Then("we should ask for a recommendation") do
   puts("recommendation")
 end
+
+Given("a user who is {int} years old") do |int|
+  puts("age")
+end
+
+When("the user tries to buy a violent movie or game") do
+  puts("buy")
+end
+
+Then("the purchase should be blocked") do
+  puts("blocked")
+end
+
+Then("the purchase should be notblocked") do
+  puts("nonblocked")
+end
