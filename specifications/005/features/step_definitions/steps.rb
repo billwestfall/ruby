@@ -236,3 +236,23 @@ end
 Then("we should ask_for_recommendation") do
   puts("recommendation")
 end
+
+Given("Dominic bought {string}") do |string|
+  puts("bought")
+end
+
+When("he rates it with {int} stars") do |int|
+  puts("rates")
+end
+
+Then("we should ask for tips to make it better") do
+  puts("tips")
+end
+
+Then("we should don't ask for no feedback") do
+  puts("say what")
+end
+
+Then("we should ask for a recommendation") do
+  puts("recommendation")
+end
