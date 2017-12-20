@@ -109,3 +109,19 @@ end
 Then("its name should appear on the map at {int} Cambridge Road, Chicago") do |int|
   puts("a")
 end
+
+Given("a restaurant Deep Lemon on {int} Street South, Reno") do |int|
+  puts("a")
+end
+
+Then("its name should appear on the map at {int} Street South, Reno") do |int|
+  puts("a")
+end
+
+Given("a restaurant Deep Lemon on {int} Laurel Drive, Reno") do |int|
+  puts("a")
+end
+
+Then("its name should appear on the map at {int} Laurel Drive, Reno") do |int|
+  puts("a")
+end
