@@ -125,3 +125,39 @@ end
 Then("its name should appear on the map at {int} Laurel Drive, Reno") do |int|
   puts("a")
 end
+
+Given("a restaurant UNNAMED BUSINESS on NOWHERE") do
+  puts("b")
+end
+
+When("UNNAMED BUSINESS signs up to Mapper") do
+  puts("b")
+end
+
+Then("it shouldn't be added to the platform") do
+  puts("b")
+end
+
+Then("its name shouldn't appear on the map at NOWHERE") do
+  puts("b")
+end
+
+Given("a restaurant UNNAMED BUSINESS on {int} {int}nd Street, Stockton") do |int, int2|
+  puts("b")
+end
+
+Then("its name shouldn't appear on the map at {int} {int}nd Street, Stockton") do |int, int2|
+  puts("b")
+end
+
+Given("a restaurant Anchor on Chicago River, Chicago") do
+  puts("b")
+end
+
+Then("its name shouldn't appear on the map at Chicago River, Chicago") do
+  puts("b")
+end
+
+Given("a restaurant Anchor on NOWHERE") do
+  puts("b")
+end
