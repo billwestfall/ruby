@@ -161,3 +161,35 @@ end
 Given("a restaurant Anchor on NOWHERE") do
   puts("b")
 end
+
+When("it schedules its hours to be {int}AM{int}PM every day") do |int, int2|
+  puts("c")
+end
+
+Then("the hours should appear on the map at {int} Street South, Reno") do |int|
+  puts("c")
+end
+
+Given("a restaurant Le Chef on {int} Chapel Road, Chicago") do |int|
+  puts("c")
+end
+
+When("it schedules its hours to be {int}PM{int}AM every day") do |int, int2|
+  puts("c")
+end
+
+Then("the hours should appear on the map at {int} Chapel Road, Chicago") do |int|
+  puts("c")
+end
+
+Given("a restaurant Anchor on {int} Summit Avenue, Tampa") do |int|
+  puts("c")
+end
+
+When("it schedules its hours to be {int} AM{int} PM every day") do |int, int2|
+  puts("c")
+end
+
+Then("the hours should appear on the map at {int} Summit Avenue, Tampa") do |int|
+  puts("c")
+end
