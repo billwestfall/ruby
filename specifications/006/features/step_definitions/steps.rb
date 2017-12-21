@@ -193,3 +193,16 @@ end
 Then("the hours should appear on the map at {int} Summit Avenue, Tampa") do |int|
   puts("c")
 end
+
+Given("a sightseeing object:") do |table|
+  # table is a Cucumber::MultilineArgument::DataTable
+  puts("d")
+end
+
+When("Janet, who is a tourist, looks at Oak Street") do
+  puts("d")
+end
+
+Then("she should see Memorial Monument on the map") do
+  puts("d")
+end
