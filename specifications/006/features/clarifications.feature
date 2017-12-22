@@ -11,6 +11,17 @@ Feature: New businesses
     Then the <hours> should appear on the map at <location>
       Examples: Restaurants
 
-      | business      | location                |
-      | Deep Lemon    | 6750 Street South, Reno |
-      | Deep Lemon    | 6750 Street South, Reno |
+      | business      | location                | hours             | times   |
+      | Deep Lemon    | 6750 Street South, Reno | business hours    |7AM-8PM  |
+      | Deep Lemon    | 6750 Street South, Reno | popular hours     |3PM-5PM  |
+
+      Examples: Bistros
+
+      | business      | location                    | hours             | times   |
+      | Le Chef       | 3318 Summit Avenue, Tampa   | business hours    |9AM-9PM  |
+      | Le Chef       | 3318 Summit Avenue, Tampa   | popular hours     |8PM-9PM  |
+
+      Examples: Pubs
+      | business      | location                    | hours             | times   |
+      | Anchor        | 77 Chapel Road, Chicago     | business hours    |3PM-3AM  |
+      | Anchor        | 77 Chapel Road, Chicago     | popular hours     |9PM-2AM  |

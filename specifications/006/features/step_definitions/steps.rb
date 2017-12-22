@@ -214,3 +214,51 @@ end
 Then("the <hours> should appear on the map at {int} Street South, Reno") do |int|
   puts("e")
 end
+
+Given("a restaurant Deep Lemon on {int} Street South, Reno When it schedules business hours to be {int}AM{int}PM") do |int, int2, int3|
+  puts("f")
+end
+
+Then("the business hours should appear on the map at {int} Street South, Reno") do |int|
+  puts("f")
+end
+
+Given("a restaurant Deep Lemon on {int} Street South, Reno When it schedules popular hours to be {int}PM{int}PM") do |int, int2, int3|
+  puts("f")
+end
+
+Then("the popular hours should appear on the map at {int} Street South, Reno") do |int|
+  puts("f")
+end
+
+Given("a restaurant Le Chef on {int} Summit Avenue, Tampa When it schedules business hours to be {int}AM{int}PM") do |int, int2, int3|
+  puts("f")
+end
+
+Then("the business hours should appear on the map at {int} Summit Avenue, Tampa") do |int|
+  puts("f")
+end
+
+Given("a restaurant Le Chef on {int} Summit Avenue, Tampa When it schedules popular hours to be {int}PM{int}PM") do |int, int2, int3|
+  puts("f")
+end
+
+Then("the popular hours should appear on the map at {int} Summit Avenue, Tampa") do |int|
+  puts("f")
+end
+
+Given("a restaurant Anchor on {int} Chapel Road, Chicago When it schedules business hours to be {int}PM{int}AM") do |int, int2, int3|
+  puts("f")
+end
+
+Then("the business hours should appear on the map at {int} Chapel Road, Chicago") do |int|
+  puts("f")
+end
+
+Given("a restaurant Anchor on {int} Chapel Road, Chicago When it schedules popular hours to be {int}PM{int}AM") do |int, int2, int3|
+  puts("f")
+end
+
+Then("the popular hours should appear on the map at {int} Chapel Road, Chicago") do |int|
+  puts("f")
+end
