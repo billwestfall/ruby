@@ -206,3 +206,11 @@ end
 Then("she should see Memorial Monument on the map") do
   puts("d")
 end
+
+Given("a restaurant Deep Lemon on {int} Street South, Reno When it schedules <hours> to be <times>") do |int|
+  puts("e")
+end
+
+Then("the <hours> should appear on the map at {int} Street South, Reno") do |int|
+  puts("e")
+end
