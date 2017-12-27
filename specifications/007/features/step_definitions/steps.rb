@@ -27,3 +27,31 @@ end
 When("the tenant lead has a credit score of {int}") do |int|
   puts("b")
 end
+
+Given("a apartment") do
+  puts("c")
+end
+
+When("a new tenant moves in") do
+  puts("c")
+end
+
+Then("the tenant should have a lease on the entire flat") do
+  puts("c")
+end
+
+Given("a room") do
+  puts("c")
+end
+
+Then("the tenant should have a lease on their room only") do
+  puts("c")
+end
+
+Given("a shared bedroom") do
+  puts("c")
+end
+
+Then("the tenant should have a lease on share the rent with a roommate") do
+  puts("c")
+end
