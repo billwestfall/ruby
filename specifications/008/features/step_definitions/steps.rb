@@ -69,3 +69,44 @@ end
 Then("Ramona should see New York engineering events") do
   puts("a")
 end
+
+Given("events:") do |table|
+  # table is a Cucumber::MultilineArgument::DataTable
+  puts("b")
+end
+
+When("Simona searches for events by name") do
+  puts("b")
+end
+
+When("she wants to find {string}") do |string|
+  puts("b")
+end
+
+Then("she should see no results") do
+  puts("b")
+end
+
+When("Simona searches for events by department") do
+  puts("b")
+end
+
+Then("she should see {string}") do |string|
+  puts("b")
+end
+
+When("Simona searches for events by branch") do
+  puts("b")
+end
+
+Then("she should see {string}, {string}") do |string, string2|
+  puts("b")
+end
+
+When("Simona searches for events by type") do
+  puts("b")
+end
+
+When("Simona searches for events by user") do
+  puts("b")
+end
