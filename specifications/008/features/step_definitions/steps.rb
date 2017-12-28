@@ -110,3 +110,15 @@ end
 When("Simona searches for events by user") do
   puts("b")
 end
+
+Given("a search query") do
+  puts("c")
+end
+
+When("the system runs the query {int} times") do |int|
+  puts("c")
+end
+
+Then("the average execution time should be less than {int} seconds") do |int|
+  puts("c")
+end
