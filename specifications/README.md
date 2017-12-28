@@ -11,3 +11,4 @@ some notes:
 7) in chapter 7 he mentions keeping a plain text dictionary alongside specifications, but this seems counterintuitive and messy (2 different doc formats)
 8) Ability is not recognized by markup tools since it's a fairly hidden feature, so not going to use it myself. Since it is just a drop in replacement for Feature it has questionable value anyway
 9) going to question table 8.1 just because it seems arbitrary definitions. Why can't tests written quickly have short term benefit vs being long term documentation?  what is wrong with a hybrid between both user stories and executable documentation (the contrasts that follow this table are actually much more valuable)
+10) disagree on the separation of functional vs nonfunctional. if a page takes 10 seconds to load each time, this is clearly a functional requirement
