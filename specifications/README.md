@@ -13,3 +13,4 @@ some notes:
 9) going to question table 8.1 just because it seems arbitrary definitions. Why can't tests written quickly have short term benefit vs being long term documentation?  what is wrong with a hybrid between both user stories and executable documentation (the contrasts that follow this table are actually much more valuable)
 10) disagree on the separation of functional vs nonfunctional. if a page takes 10 seconds to load each time, this is clearly a functional requirement
 11) Business Need is a lot like Ability, in that it is not supported in mark up and also duplicates Feature function. 
+12) the security requirement relying on a security team as customer is specious , because any good web dev team is already aware of security issues they need to cover in their app. so this can still be looked at as a Feature
