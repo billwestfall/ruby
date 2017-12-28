@@ -122,3 +122,31 @@ end
 Then("the average execution time should be less than {int} seconds") do |int|
   puts("c")
 end
+
+Given("Simona has to set a password") do
+  puts("d")
+end
+
+When("she tries to set the password to shorty") do
+  puts("d")
+end
+
+Then("the password should be considered insecure") do
+  puts("d")
+end
+
+When("she tries to set the password to aaaaaaaa") do
+  puts("d")
+end
+
+When("she tries to set the password to simonajenkins") do
+  puts("d")
+end
+
+When("she tries to set the password to nevergonnagiveyouup") do
+  puts("d")
+end
+
+Then("the password should be considered secure") do
+  puts("d")
+end
