@@ -14,3 +14,4 @@ some notes:
 10) disagree on the separation of functional vs nonfunctional. if a page takes 10 seconds to load each time, this is clearly a functional requirement
 11) Business Need is a lot like Ability, in that it is not supported in mark up and also duplicates Feature function. 
 12) the security requirement relying on a security team as customer is specious , because any good web dev team is already aware of security issues they need to cover in their app. so this can still be looked at as a Feature
+13) the examples 9.4 - 9.7 are really just splitting a big feature up, so not really a need for Ability to do this, it's a common enough action in development as is
