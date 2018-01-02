@@ -159,3 +159,20 @@ end
 Then("the event should be successfully published") do
   puts("c")
 end
+
+Given("a company-wide event called Annual staff picnic And that it takes place on {int}{int}{int} at {int} AM") do |int, int2, int3, int4|
+  puts("d")
+end
+
+Given("a company-wide event called Yoga classes And that it takes place every Monday at {int}AM") do |int|
+  puts("d")
+end
+
+Then("she should get a reminder every Monday before {int}AM") do |int|
+  puts("d")
+end
+
+Given("that Terry wants to organize another company-wide event:") do |table|
+  # table is a Cucumber::MultilineArgument::DataTable
+  puts("d")
+end
