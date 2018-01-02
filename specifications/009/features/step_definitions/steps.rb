@@ -176,3 +176,31 @@ Given("that Terry wants to organize another company-wide event:") do |table|
   # table is a Cucumber::MultilineArgument::DataTable
   puts("d")
 end
+
+Given("Simona has to set a password") do
+  puts("e")
+end
+
+When("she tries to set the password to shorty") do
+  puts("e")
+end
+
+Then("the password should be considered insecure") do
+  puts("e")
+end
+
+When("she tries to set the password to aaaaaaaa") do
+  puts("e")
+end
+
+When("she tries to set the password to simonajenkins") do
+  puts("e")
+end
+
+When("she tries to set the password to nevergonnagiveyouup") do
+  puts("e")
+end
+
+Then("the password should be considered secure") do
+  puts("e")
+end
