@@ -268,3 +268,47 @@ end
 When("she enters no code") do
   puts("g")
 end
+
+Given("Simona's previous logins were from the USA") do
+  puts("h")
+end
+
+When("somebody logs in to her account from theUSA") do
+  puts("h")
+end
+
+Then("her account should be considered secure") do
+  puts("h")
+end
+
+Then("Simona should be notified about the security breach") do
+  puts("h")
+end
+
+When("somebody logs in to her account from the UK") do
+  puts("h")
+end
+
+Then("her account should be considered compromised") do
+  puts("h")
+end
+
+Given("Simona's previous logins were from the UK") do
+  puts("h")
+end
+
+When("somebody logs in to her account from the USA") do
+  puts("h")
+end
+
+Given("Simona was notified about the security breach") do
+  puts("h")
+end
+
+When("she confirms her identity via two-factor authentication") do
+  puts("h")
+end
+
+Then("she should be able to log herself out from all devices remotely") do
+  puts("h")
+end
