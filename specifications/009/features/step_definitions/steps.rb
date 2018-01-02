@@ -204,3 +204,67 @@ end
 Then("the password should be considered secure") do
   puts("e")
 end
+
+Then("Simona should see that her password is weak") do
+  puts("f")
+end
+
+When("she tries to set the password to imagination") do
+  puts("f")
+end
+
+Then("Simona should see that her password is medium") do
+  puts("f")
+end
+
+When("she tries to set the password to countryside") do
+  puts("f")
+end
+
+When("she tries to set the password to inimitable") do
+  puts("f")
+end
+
+Then("Simona should see that her password is strong") do
+  puts("f")
+end
+
+Given("two-factor auth for Simona") do
+  puts("g")
+end
+
+Given("Simona's desire to log in") do
+  puts("g")
+end
+
+When("she provides her username") do
+  puts("g")
+end
+
+When("she provides her password") do
+  puts("g")
+end
+
+When("she enters the correct code") do
+  puts("g")
+end
+
+Then("she should be logged in") do
+  puts("g")
+end
+
+When("she enters a wrong code") do
+  puts("g")
+end
+
+Then("she should be not logged in") do
+  puts("g")
+end
+
+Given("traditional auth for Simona") do
+  puts("g")
+end
+
+When("she enters no code") do
+  puts("g")
+end
