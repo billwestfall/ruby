@@ -312,3 +312,43 @@ end
 Then("she should be able to log herself out from all devices remotely") do
   puts("h")
 end
+
+Given("a valid SSO API endpoint provided by an IT Security team And a client ID") do
+  puts("j")
+end
+
+Given("a client secret") do
+  puts("j")
+end
+
+Given("a callback URL") do
+  puts("j")
+end
+
+When("IT Security team activates SSO") do
+  puts("j")
+end
+
+Then("the company's Activitee should start pointing to the Identity Provider") do
+  puts("j")
+end
+
+Given("an SSO-enabled company") do
+  puts("j")
+end
+
+Given("James, an employee who{string}s system") do |string|
+  puts("j")
+end
+
+When("he doesn't re-enter his credentials on Activitee when he logs in Then he should still be authenticated and let in") do
+  puts("j")
+end
+
+When("their CISO decides to disable SSO") do
+  puts("j")
+end
+
+Then("the employees need to enter credentials in order to get in") do
+  puts("j")
+end
