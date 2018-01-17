@@ -77,3 +77,35 @@ end
 Then("she should be able to log herself out from all devices remotely") do
   puts("a")
 end
+
+Given("HR set the adoption goal to {int}%") do |int|
+  puts("b")
+end
+
+Given("the company has {int} employees registered") do |int|
+  puts("b")
+end
+
+Given("there are {int} interest groups in the organization") do |int|
+  puts("b")
+end
+
+Given("only {int} interest groups have more members than {int}") do |int, int2|
+  puts("b")
+end
+
+When("the current adoption goal is calculated") do
+  puts("b")
+end
+
+Then("it should be at {int}%") do |int|
+  puts("b")
+end
+
+Then("Mike's company should be meeting their KPIs") do
+  puts("b")
+end
+
+Then("Mike's company should not be meeting their KPIs") do
+  puts("b")
+end
