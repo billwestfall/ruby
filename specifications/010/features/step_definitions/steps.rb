@@ -109,3 +109,32 @@ end
 Then("Mike's company should not be meeting their KPIs") do
   puts("b")
 end
+
+Given("a Fortune {int} company like Coca-Cola") do |int|
+  puts("c")
+end
+
+Given("a bonus of {int} points granted to Simona by her team lead") do |int|
+  puts("c")
+end
+
+Given("a company rewards catalog:") do |table|
+  # table is a Cucumber::MultilineArgument::DataTable
+  puts("c")
+end
+
+When("Simona tries to redeem her bonus points to A Starbucks Gift Card") do
+  puts("c")
+end
+
+Then("she should get her reward") do
+  puts("c")
+end
+
+When("Simona tries to redeem her bonus points to A dinner with the CEO") do
+  puts("c")
+end
+
+Then("she should see she doesn't have enough points") do
+  puts("c")
+end
