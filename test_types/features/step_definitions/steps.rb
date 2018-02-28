@@ -40,6 +40,25 @@ Given(/^I am on the page$/) do
     visit '@site_id'
 end
 
+When(/^I press the button "(.*?)"/) do |option|
+    click_button(option)
+end
+
+When(/^I press the button with label Search$/) do
+    find(:xpath, "/html/body/div/div[3]/form/div[2]/div[3]/center/input[1]").click
+    sleep 3
+end
+
+And(/^I enter "([^"]*)" into the search field and hit enter$/) do |myText|
+  find(:xpath, '//*[@id="lst-ib"]').set("#{myText}\n")
+  sleep 3
+end
+
+And(/^I enter text into the field "([^"]*)"$/) do |myText, myField|
+  fill_in "#{myField}", :with => "#{myText}"
+  sleep 3
+end
+
 Then(/^I should see "(.*?)"$/) do |expectedText|
     expect(page).to have_content(expectedText)
     sleep 3
