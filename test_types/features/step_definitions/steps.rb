@@ -1,6 +1,6 @@
 date = Time.now.strftime("%Y-%m-%d-%H-%M-%S")
 myLen = Random.new.rand(1..10)
-myAlphaNum = [*('a'..'z'),*('0'..'9')].shuffle[0,myLength].join
+myAlphaNum = [*('a'..'z'),*('0'..'9')].shuffle[0,myLen].join
 myApplication = ["email", "twitter", "facebook"].sample
 api_url = "https://www.google.com"
 myRanText = ENV['MYRAN']
@@ -33,10 +33,14 @@ end
 
 Given(/^I am on the site$/) do
     visit 'http://www.google.com'
-    binding.pry
 end
 
 Given(/^I am on the page$/) do
   @site_id = ENV['MY_PAGE']
     visit '@site_id'
+end
+
+Then(/^I should see "(.*?)"$/) do |expectedText|
+    expect(page).to have_content(expectedText)
+    sleep 3
 end
