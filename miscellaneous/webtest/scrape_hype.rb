@@ -2,7 +2,7 @@ require 'rubygems'
 require 'colorize'
 require 'highline/import'
 
-puts("Test Google via curl")
+puts("Test Hype Machine via curl")
 puts("")
 sleep 3
 
