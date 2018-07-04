@@ -12,6 +12,9 @@ puts("")
 puts("Testing Hype Machine")
 sleep 1
 puts("")
+puts my_hype
+puts("")
+sleep 1
 
 if my_hype.include? "Hype Machine"
    puts "Page PASS".green
