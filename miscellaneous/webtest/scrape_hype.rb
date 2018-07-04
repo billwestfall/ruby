@@ -8,11 +8,13 @@ sleep 3
 
 my_hype = %x[curl -X GET "https://hypem.com/popular" -H  "accept: application/json;charset=UTF-8" -H  "Content-Type: application/json"]
 
+my_json = JSON.parse(my_hype)
+
 puts("")
 puts("Testing Hype Machine")
 sleep 1
 puts("")
-puts my_hype
+puts my_json
 puts("")
 sleep 1
 
