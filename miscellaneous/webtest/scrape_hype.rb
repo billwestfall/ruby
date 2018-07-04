@@ -1,21 +1,23 @@
 require 'rubygems'
 require 'colorize'
 require 'highline/import'
-require 'json'
 
-uri = URI.parse("https://hypem.com/popular")
-req = Net::HTTP::Post.new(uri.request_uri)
-# req.set_form_data('field1' => 'data1', 'field2' => 'data2' )          
-res = Net::HTTP.start(uri.host, uri.port) do |http|
-        http.request(req)
-      endcase res
- when Net::HTTPSuccess, Net::HTTPRedirection
-      puts "OK"
-      puts res.body
-      puts JSON.parse(res.body)
-#      puts status = JSON.parse(res.body)['status']
-#      puts tuid = JSON.parse(res.body)['result']['tuid']
-  else   
-      puts res.message
-  end
+puts("Test Hype Machine via curl")
+puts("")
+sleep 3
+
+my_hype = %x[curl -X GET "https://hypem.com/popular" -H  "accept: application/json;charset=UTF-8" -H  "Content-Type: application/json"]
+
+puts("")
+puts("Testing Hype Machine")
+sleep 1
+puts("")
+puts my_hype
+puts("")
+sleep 1
+
+if my_hype.include? "Hype Machine"
+   puts "Page PASS".green
+else
+  puts "Page FAIL".red
 end
