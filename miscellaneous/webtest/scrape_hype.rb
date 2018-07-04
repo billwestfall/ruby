@@ -1,6 +1,7 @@
 require 'rubygems'
 require 'colorize'
 require 'highline/import'
+require 'json'
 
 puts("Test Hype Machine via curl")
 puts("")
