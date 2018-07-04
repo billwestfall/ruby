@@ -18,3 +18,4 @@ res = Net::HTTP.start(uri.host, uri.port) do |http|
   else   
       puts res.message
   end
+end
