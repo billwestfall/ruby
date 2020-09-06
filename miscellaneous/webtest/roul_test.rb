@@ -7,3 +7,4 @@ puts [c]
     puts "you win"
   else
     puts "you lose"
+  end
