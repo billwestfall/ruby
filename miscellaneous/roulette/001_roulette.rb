@@ -4,7 +4,7 @@ puts "What is your bet? "
 roul_prompt = gets.chomp
 e = bet_type.to.i
 if e == 1
-d = roul_prompt.to_i
+d = roul_prompt.to.i
 b = rand(0..36)
 puts [b]
   if b == d
