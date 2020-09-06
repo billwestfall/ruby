@@ -1,4 +1,5 @@
 puts "What kind of bet do you want to make?: 1) straight bet"
+bet_type = gets.chomp
 puts "What is your bet? "
 roul_prompt = gets.chomp
 d = roul_prompt.to_i
