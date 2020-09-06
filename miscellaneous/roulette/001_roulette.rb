@@ -3,7 +3,7 @@ e = gets.chomp
 if e == "1"
   puts "What is your bet? "
   roul_prompt = gets.chomp
-  d = roul_prompt
+  d = roul_prompt.to_i
   b = rand(0..3)
   puts [b]
     if b == d
