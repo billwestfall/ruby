@@ -1,6 +1,5 @@
 #!/usr/bin/ruby
 
-print "piano: "
   $i = 0
     while $i < 80 do
       print [ :o0, :o1, :o2, :o3, :o4, :o5, :o6, :o7, :o8, :o9, :<, :> ].sample
