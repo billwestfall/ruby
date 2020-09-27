@@ -7,6 +7,5 @@
       print [ "is", "es", "", "" ].sample
       print [ "2", "4", "8", "16", "32", "", "", "" ].sample
       print [ "'", ",", "", "", "" ].sample
-      print " "
       $i +=1
     end
