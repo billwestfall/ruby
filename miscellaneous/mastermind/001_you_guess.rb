@@ -8,3 +8,4 @@ if mm_prompt == c
   puts "You win! Color was ", c
 else
   puts "You lose, color was ", c
+end
