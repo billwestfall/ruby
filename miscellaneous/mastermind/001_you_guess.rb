@@ -1,6 +1,6 @@
 
 b = ["W","B","U","R","G","Y"]
-c = b.sample(2)
+c = b.sample(1)
 b.delete(c)
 puts "What colors are your guess? "
 mm_prompt = gets.chomp
