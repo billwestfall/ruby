@@ -1,5 +1,5 @@
 
-b = [WBURGY]
+b = ["W","B","U","R","G","Y"]
 c = b.sample(2)
 b.delete(c)
 puts "What colors are your guess? "
