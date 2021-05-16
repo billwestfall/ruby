@@ -1,11 +1,11 @@
 
-b = ["Yellow", "Green", "Red", "White", "Purple", "Orange"]
-c = b.sample
+b = [WBURGY]
+c = b.sample(2)
 b.delete(c)
-puts "What color is your guess? "
+puts "What colors are your guess? "
 mm_prompt = gets.chomp
 if mm_prompt == c
-  puts "You win! Color was ", c
+  puts "You win! Colors were ", c
 else
-  puts "You lose, color was ", c
+  puts "You lose, color were ", c
 end
