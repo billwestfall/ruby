@@ -1,12 +1,10 @@
 
-#b = ['W','B','U','R','G','Y']
-b = ['W']
-c = b.sample(1).to_s
+b = ["W","B","U","R","G","Y"]
+c = b.sample(1).join()
 puts "What colors are your guess? "
-mm_prompt = gets.chomp
-mm_prompt_str = mm_prompt.to_s
-if mm_prompt_str == c
-  puts "You win! Colors were ", c
+guess = gets.chomp
+if guess == c
+  puts "You win! colors were ", c
 else
   puts "You lose, color were ", c
 end
