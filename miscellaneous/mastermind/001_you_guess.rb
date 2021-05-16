@@ -1,5 +1,6 @@
 
-b = ["W","B","U","R","G","Y"]
+#b = ['W','B','U','R','G','Y']
+b = ['W']
 c = b.sample(1).to_s
 puts "What colors are your guess? "
 mm_prompt = gets.chomp
