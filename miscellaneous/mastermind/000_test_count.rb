@@ -1,1 +1,5 @@
-p = c.count { |c| w == c[0] || x == c[1] || y == c[2] || z == c[3]}
+b = ["A","B","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T"]
+c = b.sample(4)
+p = c.count { c }
+puts c
+puts p
