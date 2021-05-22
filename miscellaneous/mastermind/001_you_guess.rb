@@ -20,11 +20,11 @@ if w == c[0] && x == c[1] && y == c[2] && z == c[3]
   puts "You won!!", c
   break
 elsif w == c[0] || x == c[1] || y == c[2] || z == c[3]
-  p = c.count { |c| w == c[0] || x == c[1] || y == c[2] || z == c[3]}
-  puts "You matched ", p, "colors in the right spot "
+  p = c.count { w == c[0] || x == c[1] || y == c[2] || z == c[3]}
+  puts "You matched at least one color in the right spot "
 elsif w == c[1] || w == c[2] || w == c[3] || x == c[0] || x == c[2] || x == c[3] || y == c[0] || y == c[1] || y == c[3] || z == c[0] || z == c[1] || z == c[2]
-  q = c.count { |c| w == c[1] || w == c[2] || w == c[3] || x == c[0] || x == c[2] || x == c[3] || y == c[0] || y == c[1] || y == c[3] || z == c[0] || z == c[1] || z == c[2]}
-  puts "You matched ", q, "colors in the wrong spot"
+  q = c.count { w == c[1] || w == c[2] || w == c[3] || x == c[0] || x == c[2] || x == c[3] || y == c[0] || y == c[1] || y == c[3] || z == c[0] || z == c[1] || z == c[2]}
+  puts "You matched at least one color in the wrong spot"
 else
   puts "You matched no colors."
 end
