@@ -25,7 +25,7 @@ describe 'Car' do
       car = Car.new
       expect(car.wheels).to eq(4)
     end
-  
+  end
     
   describe '.colors' do
   
@@ -33,6 +33,7 @@ describe 'Car' do
       c = ['blue', 'black', 'red', 'green']
       expect(Car.colors).to match_array(c)
     end
+  end
     
   describe '#full_name' do
     it "returns a string in the expected format" do
