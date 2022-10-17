@@ -45,5 +45,8 @@ describe 'Car' do
         car = Car.new
         expect(car.full_name).to eq('2007 Volvo (unknown)')
       end
+    end
     
   end
+    
+end
