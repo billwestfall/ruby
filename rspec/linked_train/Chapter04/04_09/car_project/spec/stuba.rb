@@ -10,7 +10,7 @@ class ClassRoom
 end 
 
 describe ClassRoom do 
-   it 'the list_student_names method should work correctly' do 
+   it 'the list_student_names method work correctly' do 
       student1 = double('student') 
       student2 = double('student')
       
