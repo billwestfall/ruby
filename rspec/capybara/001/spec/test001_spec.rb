@@ -1,7 +1,4 @@
 feature "Signing in" do
-  background do
-    User.create(email: 'user@example.com', password: 'caplin')
-  end
 
   scenario "Signing in with correct credentials" do
     visit 'https://www.google.com/'
