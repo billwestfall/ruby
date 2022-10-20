@@ -1,0 +1,1 @@
+Rspec tests with Capybara
