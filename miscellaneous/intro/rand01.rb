@@ -9,4 +9,4 @@ y = SecureRandom.hex(x)
 z = text_colors.sample
 a = text_colors.sample
 
-puts ColorizedString[y].z.on_a
+puts ColorizedString[y].{z}.on_{a}
