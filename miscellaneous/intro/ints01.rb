@@ -9,3 +9,6 @@ puts(x + 2)
 puts(x += 2)
 puts x
 puts 1234.class
+puts 100.next
+temp = -50
+puts temp.abs
