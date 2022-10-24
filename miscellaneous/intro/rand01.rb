@@ -1,4 +1,6 @@
 require 'securerandom'
 
 x = Random.rand(30)
-puts SecureRandom.hex(x)
+y = SecureRandom.hex(x)
+
+puts ColorizedString[y].blue.on_red
