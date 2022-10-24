@@ -11,4 +11,4 @@ a = text_colors.sample
 
 b = "ColorizedString[\"" + y + "\"]." + z + ".on_" + a
 d = b.to_s
-puts d
+puts eval d
