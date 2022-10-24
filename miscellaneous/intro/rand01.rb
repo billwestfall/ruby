@@ -1,3 +1,4 @@
 require 'securerandom'
 
-puts SecureRandom.hex(15)
+x = Random.rand(30)
+puts SecureRandom.hex(x)
