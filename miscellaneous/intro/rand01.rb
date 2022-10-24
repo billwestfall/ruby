@@ -2,7 +2,9 @@ require 'securerandom'
 require 'colorize'
 require 'colorized_string'
 
+text_colors = [black, light_black, red, light_red, green, light_green, yellow, light_yellow, blue, light_blue, magenta, light_magenta, cyan, light_cyan, white, light_white]
+
 x = Random.rand(30)
 y = SecureRandom.hex(x)
 
-puts ColorizedString[y].blue.on_red
+puts ColorizedString[y].[text_colors.sample].on_[text_colors.sample]
