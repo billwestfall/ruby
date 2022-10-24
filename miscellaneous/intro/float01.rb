@@ -11,3 +11,5 @@ puts y
 puts y.class
 puts (x + 1)
 puts (y + 1)
+puts (10 / 3)
+puts (10.0 / 3)
