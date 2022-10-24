@@ -10,4 +10,4 @@ z = text_colors.sample
 a = text_colors.sample
 
 b = "ColorizedString[y]." + z + ".on_" + a
-puts b
+b
