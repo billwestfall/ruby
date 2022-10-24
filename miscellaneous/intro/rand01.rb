@@ -6,5 +6,7 @@ text_colors = [black, light_black, red, light_red, green, light_green, yellow, l
 
 x = Random.rand(30)
 y = SecureRandom.hex(x)
+z = text_colors.sample
+a = text_colors.sample
 
-puts ColorizedString[y].[text_colors.sample].on_[text_colors.sample]
+puts ColorizedString[y].z.on_a
