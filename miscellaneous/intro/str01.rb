@@ -8,3 +8,6 @@ puts greeting
 puts ("Yada" * 3)
 puts (1 * 3)
 puts ("1" * 3)
+puts greeting.reverse
+puts greeting.capitalize
+puts greeting.upcase
