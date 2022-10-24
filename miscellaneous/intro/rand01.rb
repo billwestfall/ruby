@@ -9,4 +9,5 @@ y = SecureRandom.hex(x)
 z = text_colors.sample
 a = text_colors.sample
 
-puts ColorizedString[y].{}.on_{}.format(z, a)
+b = "ColorizedString[y]." + z + ".on_" + a
+puts b
