@@ -1,5 +1,5 @@
 car = {
-  'brand' =? 'Ford',
+  'brand' => 'Ford',
   'model' => 'Mustang',
   'color' => 'blue',
   'interior_color' => 'tan'
