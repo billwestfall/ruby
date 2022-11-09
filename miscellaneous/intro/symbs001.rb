@@ -5,3 +5,7 @@ person = {
 puts person
 puts person[:last_name]
 puts person[:first_name]
+puts "test".object_id
+puts "test".object_id
+puts :test.object_id
+puts :test.object_id
