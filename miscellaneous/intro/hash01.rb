@@ -10,3 +10,6 @@ puts car ['brand']
 car['color'] = 'green'
 puts car
 puts car['color']
+car['doors'] = 2
+puts car
+puts car['doors']
