@@ -6,3 +6,7 @@ car = {
 }
 puts car
 puts car['model']
+puts car ['brand']
+car['color'] => 'green'
+puts car
+puts car['color']
