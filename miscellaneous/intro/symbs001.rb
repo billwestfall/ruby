@@ -9,3 +9,6 @@ puts "test".object_id
 puts "test".object_id
 puts :test.object_id
 puts :test.object_id
+scores = {low: 2, high: 8, avg: 6}
+puts scores.keys.first.class
+puts scores[:high]
