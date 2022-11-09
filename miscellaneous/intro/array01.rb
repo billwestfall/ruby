@@ -25,5 +25,5 @@ puts array
 puts array.delete('c')
 puts array
 puts [1,2,3,4].join(',')
-puts [1,2,3,4].join(
-puts "1,2,3,4".split(',')
+puts [1,2,3,4].join
+puts ["1,2,3,4"].split(',')
