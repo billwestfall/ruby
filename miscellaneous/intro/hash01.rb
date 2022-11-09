@@ -5,3 +5,4 @@ car = {
   'interior_color' => 'tan'
 }
 puts car
+puts car['model']
