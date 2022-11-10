@@ -3,7 +3,7 @@ y = gets
 x = y.to_i
 
 blanket = "**--++~~>>"
-arr01 = blanket.split("")
+blanb = blanket.split("")
 
 arr01 = blanb.to_a
 
