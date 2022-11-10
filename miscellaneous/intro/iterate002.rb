@@ -5,3 +5,5 @@ fruits.ech do |fruit|
 end
 
 for fruit in fruits
+  puts fruit.capitalize
+end
