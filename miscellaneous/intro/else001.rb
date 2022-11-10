@@ -1,5 +1,6 @@
 puts "Please enter an integer: "
-gets x.to_i
+y = gets
+x = y.to_i
 
 if x <= 10
   puts "10 or below"
