@@ -9,7 +9,8 @@ arr01 = blanket.split("")
 
 i = x
 while i >= 0
-  puts arr01
+  print arr01
   b = arr01.shift
   arr01 = arr01.join[b]
+  i -= 1
 end
