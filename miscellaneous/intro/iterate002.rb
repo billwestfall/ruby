@@ -5,5 +5,5 @@ fruits.each do |fruit|
 end
 
 for fruit in fruits
-  puts fruit.capitalize
+  puts fruit.reverse
 end
