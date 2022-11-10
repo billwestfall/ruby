@@ -3,14 +3,12 @@ y = gets
 x = y.to_i
 
 blanket = "**--++~~>>"
-blanb = blanket.split("")
-
-arr01 = blanb.to_a
+arr01 = blanket.split('')
 
 i = x
 while i >= 0
-  print arr01
   b = arr01.shift
-  arr01 = arr01.join[b]
+  arr01 << b
+  puts arr01.join
   i -= 1
 end
