@@ -2,7 +2,7 @@ puts "Enter an integer for line count: "
 y = gets
 x = y.to_i
 
-blanket = "**--++~~>>"
+blanket = "**--++~~>>%%&&##))@@--=="
 arr01 = blanket.split('')
 
 i = x
