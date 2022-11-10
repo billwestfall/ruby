@@ -1,6 +1,6 @@
 fruits = ['banana', 'apple', 'pear']
 
-fruite.ech do |fruit|
+fruits.ech do |fruit|
   puts fruit.capitalize
 end
 
