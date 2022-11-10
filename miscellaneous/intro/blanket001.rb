@@ -11,4 +11,5 @@ while i >= 0
   arr01 << b
   puts arr01.join
   i -= 1
+  sleep 0.5
 end
