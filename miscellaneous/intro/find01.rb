@@ -18,6 +18,6 @@ puts fruits
 
 puts "Is name of fruit more than 5 characters?"
 
-fruits.find |fruit|
+fruits.find do |fruit|
   puts fruit.length > 5
 end
