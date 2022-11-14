@@ -12,7 +12,7 @@ if y == x
   exit
 else
    i = 1
-  while i < 4
+  while i < 3
     puts "Enter a new guess: "
     num = gets
     y = num.to_i
