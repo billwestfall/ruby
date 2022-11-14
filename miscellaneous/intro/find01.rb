@@ -21,3 +21,13 @@ puts "Is name of fruit more than 5 characters?"
 fruits.find do |fruit|
   puts fruit.length > 5
 end
+
+pantry = {'apple' => 0, 'banana' => 1, 'pear' => 3}
+
+puts pantry
+
+puts "What items do we have to buy?"
+
+pantry.find do |k,v|
+  puts v == 0
+end
