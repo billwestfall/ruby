@@ -1,6 +1,6 @@
 #!/usr/bin/env ruby
 
-x = rand[1..10]
+x => rand[1..10]
 
 puts "Guess a number from 1 to 10: "
 
