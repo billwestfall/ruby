@@ -1,6 +1,6 @@
 #!/usr/bin/env ruby
 
 print "What is your name?: "
-response = gets
+response = gets.chomp
 
-puts "Hello, #{response}"
+puts "Hello, #{response}!"
