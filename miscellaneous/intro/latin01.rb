@@ -6,7 +6,7 @@ y = gets.chomp
 
 v = ['a', 'e', 'i', 'o', 'u']
 
-if y.first == v.any?
+if y.chars.first == v.any?
   puts "Starts with a vowel!"
 else
   puts "Starts with a consanant"
