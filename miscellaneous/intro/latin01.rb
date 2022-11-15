@@ -3,7 +3,7 @@
 puts "Enter a word to covert to pig latin: "
 
 z = gets.chomp
-y = z.to_a
+y = Array[z]
 
 v = ['a', 'e', 'i', 'o', 'u']
 
