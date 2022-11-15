@@ -9,3 +9,7 @@ puts "Now sort!"
 x = arr01.sort {|v1,v2| v1 <=> v2}
 
 puts x
+
+puts "Reverse sort!"
+
+y = arr01.sort {|v1,v2| v2 <=> v1}
