@@ -13,3 +13,5 @@ puts x
 puts "Reverse sort!"
 
 y = arr01.sort {|v1,v2| v2 <=> v1}
+
+puts y
