@@ -7,7 +7,7 @@ puts y.chars.first
 
 v = ['a', 'e', 'i', 'o', 'u']
 
-if y.chars.first == v.any?
+if y.intersection(v)
   puts "Starts with a vowel!"
 else
   puts "Starts with a consanant"
