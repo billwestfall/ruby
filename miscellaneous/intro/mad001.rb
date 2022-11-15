@@ -12,4 +12,4 @@ puts "Please enter a noun: "
 
 n = gets
 
-puts "I #{v} the #{a} #{n}"
+print "I #{v} the #{a} #{n}"
