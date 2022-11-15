@@ -2,8 +2,8 @@
 
 puts "Enter a word to covert to pig latin: "
 
-y = gets.chomp
-puts y.chars.first
+z = gets.chomp
+y = z.to_a
 
 v = ['a', 'e', 'i', 'o', 'u']
 
