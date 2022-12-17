@@ -8,6 +8,8 @@ file.each do |row|
    print row[0]
    print ", "
    print row[3]
+   print ", "
+   print row[22]
    puts
    sleep 2
    total_score += 1
