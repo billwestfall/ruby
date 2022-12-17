@@ -6,6 +6,7 @@ total_score = 0
 
 file.each do |row|
    print row[0]
+   print ", "
    print row[3]
    puts
    sleep 2
