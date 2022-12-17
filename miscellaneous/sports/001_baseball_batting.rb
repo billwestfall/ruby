@@ -9,7 +9,7 @@ file.each do |row|
    print ", "
    print row[3]
    print ", "
-   print row[22]
+   print row[23]
    puts
    sleep 2
    total_score += 1
