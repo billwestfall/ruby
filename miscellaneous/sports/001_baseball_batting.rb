@@ -7,5 +7,5 @@ total_score = 0
 file.each do |row|
    print (row)
    sleep 1
-   total_score += row['score']
+   total_score += 1
 end
