@@ -1,9 +1,9 @@
 puts("Please enter the length: ")
-gets l
+l = gets
 puts("Please enter the  height: ")
-gets h
+h = gets
 puts("Please enter the width: ")
-gets w
+w = gets
 
 area = (2*l*h) + (2*l*w) + (2*w*h)
 puts("Total area is: ")
