@@ -7,4 +7,4 @@ w = gets.to_f
 
 area = (2*l*h) + (2*l*w) + (2*w*h)
 puts("Total area is: ")
-puts area
+puts area.to_i
