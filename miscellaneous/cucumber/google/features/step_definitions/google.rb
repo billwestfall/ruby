@@ -28,7 +28,3 @@ Then("I should see the search input field") do
   search_input = @driver.find_element(:name, "q")
   expect(search_input.displayed?).to be(true)
 end
-
-After do
-  @driver.quit
-end
