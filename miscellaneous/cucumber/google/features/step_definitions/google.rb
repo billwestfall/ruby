@@ -20,7 +20,7 @@ Given("I am on the Google start page") do
 end
 
 Then("I should see the Google logo") do
-  logo = @driver.find_element(:id, "hplogo")
+  logo = @driver.find_element(:id, "googlelogo")
   expect(logo.displayed?).to be(true)
 end
 
