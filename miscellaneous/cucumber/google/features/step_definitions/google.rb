@@ -8,5 +8,5 @@ Given('I am on the Google homepage') do
 end
 
 Then /^I should see "([^"]*)"$/ do |desc|
- page.should have_content desc
+ expect(page).to have_content desc
 end
