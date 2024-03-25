@@ -6,6 +6,7 @@ Given("I am on Google homepage") do
     visit "http://#{@profile_id}"
 end
 
-Then("I should see {string}") do |string|
-  page.body.should_not include_text(string)
+Then /^I should see "([^"]*)"$/ do |desc|
+ debugger
+ page.should have_content desc
 end
