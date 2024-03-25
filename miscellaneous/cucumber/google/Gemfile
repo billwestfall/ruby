@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
 gem 'capybara'
 gem 'poltergeist'
-gem 'minitest/autorun'
+gem 'minitest'
 gem 'headless'
