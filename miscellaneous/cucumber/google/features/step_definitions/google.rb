@@ -7,5 +7,5 @@ Given(/^I am on Google homepage$/) do
 end
 
 Then('I should see {string}') do |string|
-  pending # Write code here that turns the phrase above into concrete actions
+  page.body.should_not include_text(string)
 end
