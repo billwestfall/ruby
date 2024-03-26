@@ -10,6 +10,10 @@ Given('I am on the Google homepage') do
     visit "https://#{@profile_id}"
 end
 
+When /^I enter "([^"]*)" in the Search window$/ do |search|
+  fill_in 'Search', :with =>; search
+end
+
 When('I click the {string} button') do |string|
   click_button string
 end
