@@ -10,6 +10,10 @@ Given('I am on the Google homepage') do
     visit "https://#{@profile_id}"
 end
 
+When /^I click on the ""([^"]*)" button$/ do |butn|
+    click_button butn
+end
+
 Then /^I should see "([^"]*)"$/ do |desc|
     expect(page).to have_content desc
 end
