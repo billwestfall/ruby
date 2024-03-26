@@ -10,7 +10,7 @@ Given('I am on the Google homepage') do
     visit "https://#{@profile_id}"
 end
 
-When /^I click on the ""([^"]*)" button$/ do |butn|
+When /^I click the ""([^"]*)" button$/ do |butn|
     click_button butn
 end
 
