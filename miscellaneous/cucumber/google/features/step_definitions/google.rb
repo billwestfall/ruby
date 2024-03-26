@@ -10,8 +10,8 @@ Given('I am on the Google homepage') do
     visit "https://#{@profile_id}"
 end
 
-When('I click the {butn} button') do |butn|
-  click_button butn
+When('I click the {string} button') do |string|
+  click_button string
 end
 
 Then /^I should see "([^"]*)"$/ do |desc|
