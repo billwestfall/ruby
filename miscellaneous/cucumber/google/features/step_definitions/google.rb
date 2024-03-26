@@ -15,7 +15,6 @@ When /^I enter "([^"]*)" in the Search window$/ do |search|
 end
 
 When('I click the {string} button') do |string|
-  page.find('Google Search')
   click_button string, wait: 10
 end
 
