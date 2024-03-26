@@ -15,7 +15,7 @@ When /^I enter "([^"]*)" in the Search window$/ do |search|
 end
 
 When('I click the {string} button') do |string|
-  click_button string
+  click string
 end
 
 Then /^I should see "([^"]*)"$/ do |desc|
