@@ -12,6 +12,7 @@ end
 
 When /^I enter "([^"]*)" in the Search window$/ do |search|
   fill_in 'APjFqb', :with => search
+   native.send_keys(:Return)
 end
 
 When('I click the {string} button') do |string|
