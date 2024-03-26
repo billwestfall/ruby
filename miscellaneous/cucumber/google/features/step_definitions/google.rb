@@ -11,8 +11,7 @@ Given('I am on the Google homepage') do
 end
 
 When /^I enter "([^"]*)" in the Search window$/ do |search|
-  fill_in 'APjFqb', :with => search
-  find('APjFqb').native.send_keys(:return)
+  fill_in 'APjFqb', :with => search, , :with "\t"
 end
 
 When('I click the {string} button') do |string|
