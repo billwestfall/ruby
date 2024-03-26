@@ -1,6 +1,7 @@
-Feature: Navigate to Google
+Feature: Search with Google
 
-Scenario: Navigate to the website        
+Scenario: Search with Google      
 	Given I am on the Google homepage
-  When I click the "I'm Feeling Lucky" button
-	Then I should see "Search"
+        When I enter "test" in the Search window
+        When I click the "Google Search" button
+	Then I should see "test"
