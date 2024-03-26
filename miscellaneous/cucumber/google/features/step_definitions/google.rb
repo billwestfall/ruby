@@ -14,11 +14,6 @@ When /^I enter "([^"]*)" in the Search window$/ do |search|
   fill_in 'APjFqb', :with => search
 end
 
-When I press Enter
-  place = page.find_by_id(APjFqb).native
-  place.send_keys(:enter)
-end
-
 When('I click the {string} button') do |string|
   click_button(string)
 end
