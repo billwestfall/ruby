@@ -16,7 +16,7 @@ end
 
 When('I click the {string} button') do |string|
 #  click_on string
-  first(string).click
+  find("input[type='submit']").click
 end
 
 Then /^I should see "([^"]*)"$/ do |desc|
