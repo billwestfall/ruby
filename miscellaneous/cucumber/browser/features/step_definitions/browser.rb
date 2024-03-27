@@ -21,7 +21,7 @@ When /^I click the "([^"]*)" link$/ do |link|
 end
 
 When /^I click the "([^"]*)" span$/ do |spant|
-  find('span', text: spant).click
+  find('span').first(text: spant).click
 end
 
 Then /^I should see "([^"]*)"$/ do |desc|
