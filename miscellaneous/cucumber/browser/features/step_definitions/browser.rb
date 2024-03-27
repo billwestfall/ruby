@@ -13,7 +13,7 @@ When /^I enter "([^"]*)" in the Search window$/ do |search|
 end
 
 When /^I enter "([^"]*)" in the Yandex Search window$/ do |ysearch|
-  fill_in 'Web Search', :with => ysearch
+  fill_in 'search3_inner', :with => ysearch
 end
 
 When('I click the {string} button') do |string|
