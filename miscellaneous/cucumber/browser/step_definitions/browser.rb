@@ -3,11 +3,9 @@ require 'rspec'
 
 date = Time.now.strftime("%Y-%m-%d-%H-%M-%S")
 
-Given('I am on the Google homepage') do
-#    visit 'https://www.google.com'
-#    @profile_id = ENV['MYSITE']
-    @profile_id = "www.google.com"
-    visit "https://#{@profile_id}"
+Given /^I am on the "([^"]*)" homepage$/ do |browser|
+    @profile_id = browser
+    visit "https://www.#{@profile_id}"
 end
 
 When /^I enter "([^"]*)" in the Search window$/ do |search|
