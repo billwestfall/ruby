@@ -12,6 +12,10 @@ When /^I enter "([^"]*)" in the Search window$/ do |search|
   fill_in 'sb_form_q', :with => search
 end
 
+When /^I enter "([^"]*)" in the Yandex Search window$/ do |ysearch|
+  fill_in 'Web Search', :with => ysearch
+end
+
 When('I click the {string} button') do |string|
   click_button(string)
 end
