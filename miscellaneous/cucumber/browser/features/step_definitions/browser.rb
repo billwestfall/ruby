@@ -20,6 +20,10 @@ When /^I click the "([^"]*)" link$/ do |link|
   click_link(link)
 end
 
+When /^I click the "([^"]*)" span$/ do |spant|
+  find('span', text: spant).click
+end
+
 Then /^I should see "([^"]*)"$/ do |desc|
     expect(page).to have_content desc
 end
