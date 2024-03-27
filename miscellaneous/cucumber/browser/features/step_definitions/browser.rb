@@ -10,7 +10,7 @@ end
 
 When /^I enter "([^"]*)" in the Search window$/ do |search|
 #  fill_in 'sb_form_q', :with => search
-  find('sb_form_q').set("test\n")
+  find('sb_form_q').set(search)
 end
 
 When('I click the {string} button') do |string|
