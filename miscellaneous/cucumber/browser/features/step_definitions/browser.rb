@@ -16,6 +16,10 @@ When('I click the {string} button') do |string|
   click_button(string)
 end
 
+When /^I click the "([^"]*)" link$/ do |link|
+  click_link(link)
+end
+
 Then /^I should see "([^"]*)"$/ do |desc|
     expect(page).to have_content desc
 end
