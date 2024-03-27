@@ -9,7 +9,7 @@ Given /^I am on the "([^"]*)" homepage$/ do |browser|
 end
 
 When /^I enter "([^"]*)" in the Search window$/ do |search|
-  fill_in 'APjFqb', :with => search
+  fill_in 'sb_form_q', :with => search
 end
 
 When('I click the {string} button') do |string|
