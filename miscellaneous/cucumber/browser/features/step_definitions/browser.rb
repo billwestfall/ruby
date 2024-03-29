@@ -1,4 +1,3 @@
-ruby
 require 'selenium-webdriver'
 require 'rspec'
 
