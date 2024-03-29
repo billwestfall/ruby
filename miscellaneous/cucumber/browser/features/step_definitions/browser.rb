@@ -1,33 +1,31 @@
+ruby
 require 'selenium-webdriver'
 require 'rspec'
 
-date = Time.now.strftime("%Y-%m-%d-%H-%M-%S")
+date = Time.now.strftime("%!Y(MISSING)-%!m(MISSING)-%!d(MISSING)-%!H(MISSING)-%!M(MISSING)-%!S(MISSING)")
 
-Given /^I am on the "([^"]*)" homepage$/ do |browser|
-    @profile_id = browser
-    visit "https://www.#{@profile_id}"
+Given(/^I am on the "(.+)" homepage$/) do |profile_id|
+  visit "https://www.#{profile_id}"
 end
 
-When /^I enter "([^"]*)" in the Search window$/ do |search|
-  fill_in 'sb_form_q', :with => search
+When(/^I enter "(.+)" in the (Search|Yandex Search) window$/) do |text, search_type|
+  field_id = search_type == 'Search' ? 'sb_form_q' : 'text'
+  fill_in field_id, with: text
 end
 
-When /^I enter "([^"]*)" in the Yandex Search window$/ do |ysearch|
-  fill_in 'text', :with => ysearch
+When(/^I click the "(.+)" (button|link|span)$/) do |name, element_type|
+  case element_type
+  when 'button'
+    click_button(name)
+  when 'link'
+    click_link(name)
+  when 'span'
+    find('span', text: name).click
+  else
+    raise "Element type '#{element_type}' is not supported"
+  end
 end
 
-When('I click the {string} button') do |string|
-  click_button(string)
-end
-
-When /^I click the "([^"]*)" link$/ do |link|
-  click_link(link)
-end
-
-When /^I click the "([^"]*)" span$/ do |spant|
-  find('span', text: spant).first(text: spant).click
-end
-
-Then /^I should see "([^"]*)"$/ do |desc|
-    expect(page).to have_content desc
+Then(/^I should see "(.+)"$/) do |content|
+  expect(page).to have_content content
 end
