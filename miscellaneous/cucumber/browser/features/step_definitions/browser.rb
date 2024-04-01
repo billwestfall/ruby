@@ -12,7 +12,7 @@ When(/^I enter "(.+)" in the (Search|Yandex Search) window$/) do |text, search_t
   fill_in field_id, with: text
 end
 
-When(/^I enter "(.+)" in the (Startpage Search) window$/) do |text|
+When(/^I enter "(.+)" in the Startpage Search window$/) do |text|
   field_id = 'q' : 'text'
   fill_in field_id, with: text
 end
