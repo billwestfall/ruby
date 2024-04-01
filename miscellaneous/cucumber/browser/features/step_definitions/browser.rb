@@ -7,8 +7,13 @@ Given(/^I am on the "(.+)" homepage$/) do |profile_id|
   visit "https://www.#{profile_id}"
 end
 
-When(/^I enter "(.+)" in the (Search|Yandex Search|Startpage Search) window$/) do |text, search_type|
-  field_id = search_type == 'Search' ? 'sb_form_q' ? 'q' : 'text'
+When(/^I enter "(.+)" in the (Search|Yandex Search) window$/) do |text, search_type|
+  field_id = search_type == 'Search' ? 'sb_form_q' : 'text'
+  fill_in field_id, with: text
+end
+
+When(/^I enter "(.+)" in the (Startpage Search) window$/) do |text|
+  field_id = 'q' : 'text'
   fill_in field_id, with: text
 end
 
