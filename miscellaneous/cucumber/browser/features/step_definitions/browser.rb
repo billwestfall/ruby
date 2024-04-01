@@ -7,8 +7,8 @@ Given(/^I am on the "(.+)" homepage$/) do |profile_id|
   visit "https://www.#{profile_id}"
 end
 
-When(/^I enter "(.+)" in the (Search|Yandex Search) window$/) do |text, search_type|
-  field_id = search_type == 'Search' ? 'sb_form_q' : 'text'
+When(/^I enter "(.+)" in the (Search|Yandex Search|Startpage Search) window$/) do |text, search_type|
+  field_id = search_type == 'Search' ? 'sb_form_q' ? 'q': 'text'
   fill_in field_id, with: text
 end
 
