@@ -12,11 +12,6 @@ When(/^I enter "(.+)" in the (Search|Yandex Search) window$/) do |text, search_t
   fill_in field_id, with: text
 end
 
-When(/^I put "(.+)" in the Startpage Search window$/) do |text, search_type|
-  field_id = search_type == 'q' : 'text'
-  fill_in field_id, with: text
-end
-
 When(/^I click the "(.+)" (button|link|span)$/) do |name, element_type|
   case element_type
   when 'button'
