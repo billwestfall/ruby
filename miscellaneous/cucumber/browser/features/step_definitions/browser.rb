@@ -7,24 +7,26 @@ Given(/^I am on the "(.+)" homepage$/) do |profile_id|
   visit "https://www.#{profile_id}"
 end
 
-When(/^I enter "(.+)" in the (Search|Yandex Search) window$/) do |text, search_type|
-  field_id = search_type == 'Search' ? 'sb_form_q' : 'text'
-  fill_in field_id, with: text
+When("I enter {string} into the search field") do |search_term|
+  fill_in "q", with: search_term # Google's search input name is "q"
 end
 
-When(/^I click the "(.+)" (button|link|span)$/) do |name, element_type|
-  case element_type
-  when 'button'
-    click_button(name)
-  when 'link'
-    click_link(name)
-  when 'span'
-    find('span', text: name).click
-  else
-    raise "Element type '#{element_type}' is not supported"
-  end
+When("I click the {string} button") do |button_name|
+  # Google's search button can be tricky to interact with due to dynamic loading and JavaScript,
+  # so we'll use the 'name' attribute to find the button.
+  find_button(name: "btnK").click
+end
+
+Then("I should see results related to {string}") do |expected_result|
+  # Wait for the page to load and check that it includes the expected text.
+  expect(page).to have_content(expected_result)
 end
 
 Then(/^I should see "(.+)"$/) do |content|
   expect(page).to have_content content
+end
+
+Then("I should see results related to {string}") do |expected_result|
+  # Wait for the page to load and check that it includes the expected text.
+  expect(page).to have_content(expected_result)
 end
