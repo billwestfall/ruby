@@ -25,8 +25,3 @@ end
 Then(/^I should see "(.+)"$/) do |content|
   expect(page).to have_content content
 end
-
-Then("I should see results related to {string}") do |expected_result|
-  # Wait for the page to load and check that it includes the expected text.
-  expect(page).to have_content(expected_result)
-end
