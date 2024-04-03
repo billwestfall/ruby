@@ -27,5 +27,5 @@ Then(/^I should see "(.+)"$/) do |content|
 end
 
 Then(/^I will print the results$/) do
-  puts(page.text(:all)).last
+  puts(page.text(:all).last)
 end
