@@ -28,5 +28,5 @@ end
 
 Then(/^I will print the results$/) do
   page.has_css?("id #data")
-  puts(#data)
+  puts("#data")
 end
