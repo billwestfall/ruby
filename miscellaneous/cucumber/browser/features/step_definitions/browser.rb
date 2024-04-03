@@ -27,5 +27,6 @@ Then(/^I should see "(.+)"$/) do |content|
 end
 
 Then(/^I will print the results$/) do
-  puts page.body
+  page.has_css?("id #data")
+  puts("#data")
 end
