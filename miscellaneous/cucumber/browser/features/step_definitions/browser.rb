@@ -26,7 +26,6 @@ Then(/^I should see "(.+)"$/) do |content|
   expect(page).to have_content content
 end
 
-Then(/^I will print the results$/) do
-  page.has_css?("id #data")
-  puts("#data")
+Then(/^I will print the results$/) do |el|
+  puts(el.text(:all))
 end
