@@ -2,4 +2,5 @@ Feature: Navigate to Dice login
 
 Scenario: Navigate to the website        
 	Given I am on the Dice login homepage
+ 	When I enter "billwestfall@yahoo.com" into the email field
 	Then I should see "Dice"
