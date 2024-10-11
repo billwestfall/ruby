@@ -41,7 +41,7 @@ When("I enter {string} into the search field") do |search_term|
 end
 
 When("I enter {string} into the email field") do |email|
-  fill_in "email", with: search_term # Google's search input name is "q"
+  fill_in "email", with: email # Google's search input name is "q"
 end
 
 When("I click the {string} button") do |button_name|
