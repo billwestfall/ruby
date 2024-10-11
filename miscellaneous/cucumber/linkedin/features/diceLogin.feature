@@ -5,4 +5,5 @@ Scenario: Navigate to the website
  	When I enter "billwestfall@yahoo.com" into the email field
   	When I click the "Continue" button
    	When I fill in the password field
+    	When I click the "Continue" button
 	Then I should see "Dice"
