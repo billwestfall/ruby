@@ -44,16 +44,25 @@ When("I enter {string} into the email field") do |email|
   fill_in "email", with: email # Google's search input name is "q"
 end
 
+When("I enter {string} into the term search field") do |term|
+  fill_in "typeaheadInput", with: term # Google's search input name is "q"
+end
+
+When("I enter {string} into the location search field") do |location|
+  fill_in "google-location-search", with: location # Google's search input name is "q"
+end
+
 When("I fill in the password field") do
   pwd = ENV['DICE_PWD']
   fill_in "password", with: pwd # Google's search input name is "q"
 end
 
 When("I click the {string} button") do |button_name|
-  # Google's search button can be tricky to interact with due to dynamic loading and JavaScript,
-  # so we'll use the 'name' attribute to find the button.
-  #find_button(type="submit").click
   find(:css, '.absolute').click
+end
+
+When("I click the location button") do
+  find(:id, 'submitSearch-button').click
 end
 
 Then("I should see results related to {string}") do |expected_result|
