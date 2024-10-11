@@ -44,7 +44,7 @@ When("I enter {string} into the email field") do |email|
   fill_in "email", with: email # Google's search input name is "q"
 end
 
-When("I fill in the password field")
+When("I fill in the password field") do
   fill_in "password", with: dice_pwd # Google's search input name is "q"
 end
 
