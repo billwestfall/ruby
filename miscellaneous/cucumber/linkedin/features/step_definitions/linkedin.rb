@@ -45,7 +45,8 @@ When("I enter {string} into the email field") do |email|
 end
 
 When("I fill in the password field") do
-  fill_in "password", with: dice_pwd # Google's search input name is "q"
+  @pwd = ENV['DICE_PWD']
+  fill_in "password", with: "#{pwd}" # Google's search input name is "q"
 end
 
 When("I click the {string} button") do |button_name|
