@@ -3,10 +3,10 @@ require 'rspec'
 
 date = Time.now.strftime("%Y-%m-%d-%H-%M-%S")
 
-Given('I am on the Google homepage') do
+Given('I am on the LinkedIn homepage') do
 #    visit 'https://www.google.com'
 #    @profile_id = ENV['MYSITE']
-    @profile_id = "www.google.com"
+    @profile_id = "www.linkedin.com"
     visit "https://#{@profile_id}"
 end
 
