@@ -5,3 +5,5 @@ require 'headless'
 
 Capybara.default_driver = :selenium
 Capybara.javascript_driver = :headless
+
+dice_pwd = ENV["DICE_PWD"]
