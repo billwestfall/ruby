@@ -6,4 +6,4 @@ Scenario: Navigate to the website
   	When I click the "Continue" button
    	When I fill in the password field
     	When I click the "Continue" button
-	Then I should see "Dice"
+	Then I should see "Bill Westfall"
