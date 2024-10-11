@@ -7,3 +7,5 @@ Scenario: Navigate to the website
    	When I fill in the password field
     	When I click the "Continue" button
 	Then I should see "Directory"
+ 	When I enter "QA" into the term search field
+  	When I enter "Bellevue, WA, USA" into the location search field
