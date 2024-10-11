@@ -44,6 +44,10 @@ When("I enter {string} into the email field") do |email|
   fill_in "email", with: email # Google's search input name is "q"
 end
 
+When("I enter {string} into the password field") do |pwd|
+  fill_in "password", with: pwd # Google's search input name is "q"
+end
+
 When("I click the {string} button") do |button_name|
   # Google's search button can be tricky to interact with due to dynamic loading and JavaScript,
   # so we'll use the 'name' attribute to find the button.
