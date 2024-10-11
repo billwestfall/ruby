@@ -17,6 +17,13 @@ Given('I am on the Dice homepage') do
     visit "https://#{@profile_id}"
 end
 
+Given('I am on the Dice login homepage') do
+#    visit 'https://www.google.com'
+#    @profile_id = ENV['MYSITE']
+    @profile_id = "www.dice.com/dashboard/login"
+    visit "https://#{@profile_id}"
+end
+
 When /^I enter "([^"]*)" in the Search window$/ do |search|
   fill_in 'APjFqb', :with => search
 end
