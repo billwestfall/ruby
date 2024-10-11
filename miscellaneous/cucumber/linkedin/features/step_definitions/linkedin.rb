@@ -45,11 +45,11 @@ When("I enter {string} into the email field") do |email|
 end
 
 When("I enter {string} into the term search field") do |term|
-  fill_in "typeaheadInput", with: term # Google's search input name is "q"
+  fill_in (:id, "typeaheadInput"), with: term # Google's search input name is "q"
 end
 
 When("I enter {string} into the location search field") do |location|
-  fill_in "google-location-search", with: location # Google's search input name is "q"
+  fill_in (:id, "google-location-search"), with: location # Google's search input name is "q"
 end
 
 When("I fill in the password field") do
