@@ -6,3 +6,4 @@ Scenario: Navigate to the website
    	When I fill in the password field
  	When I enter "QA" into the term search field
   	When I enter "Bellevue, WA, USA" into the location search field
+   	When I then click the search button
