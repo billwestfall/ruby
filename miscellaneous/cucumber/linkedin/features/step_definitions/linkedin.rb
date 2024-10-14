@@ -85,6 +85,11 @@ When("I click the {string} button") do |button_name|
   driver.find_element(:css, '.absolute').click
 end
 
+When("I then click the search button") do
+  driver.find(:id, 'submitSearch-button').click
+  sleep(10)
+end
+
 When("I click the location button") do
   find(:id, 'submitSearch-button').click
 end
