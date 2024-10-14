@@ -51,6 +51,7 @@ When("I enter {string} into the email field") do |email|
   #fill_in "email", with: email # Google's search input name is "q"
   driver.find_element(:name, 'email').send_keys email
   driver.find_element(:name, 'email').submit
+  sleep(10)
 end
 
 When("I enter {string} into the term search field") do |term|
@@ -71,6 +72,7 @@ When("I fill in the password field") do
   #fill_in "password", with: pwd # Google's search input name is "q"
   driver.find_element(:name, 'password').send_keys pwd
   driver.find_element(:name, 'password').submit
+  sleep(10)
 end
 
 When("I click the {string} button") do |button_name|
