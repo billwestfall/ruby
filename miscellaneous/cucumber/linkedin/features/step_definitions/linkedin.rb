@@ -7,6 +7,7 @@ require 'rspec'
 
 date = Time.now.strftime("%Y-%m-%d-%H-%M-%S")
 #browser = Selenium::Browser.new :chrome
+driver = Selenium::WebDriver.for :chrome
 
 Given('I am on the LinkedIn homepage') do
 #    visit 'https://www.google.com'
@@ -19,7 +20,7 @@ Given('I am on the Dice homepage') do
 #    visit 'https://www.google.com'
 #    @profile_id = ENV['MYSITE']
     @profile_id = "www.dice.com"
-    visit "https://#{@profile_id}"
+    driver.visit "https://#{@profile_id}"
 end
 
 Given('I am on the Dice login homepage') do
