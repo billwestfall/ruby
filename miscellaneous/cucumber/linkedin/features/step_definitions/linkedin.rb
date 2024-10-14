@@ -1,5 +1,7 @@
 require 'selenium-webdriver'
 require 'rspec'
+require 'watir'
+require 'watir-webdriver'
 
 date = Time.now.strftime("%Y-%m-%d-%H-%M-%S")
 browser = Watir::Browser.new :chrome
