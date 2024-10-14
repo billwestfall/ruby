@@ -1,3 +1,4 @@
+require 'selenium'
 require 'selenium-webdriver'
 require 'rspec'
 require 'watir'
