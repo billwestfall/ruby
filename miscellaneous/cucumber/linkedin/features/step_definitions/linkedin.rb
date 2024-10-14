@@ -59,15 +59,17 @@ When("I enter {string} into the term search field") do |term|
   #page.find_by_id("typeaheadInput").fill_in?(term)
   #page.find_element(By.XPATH, "//input[contains(@placeholder,'typeaheadInput')]").fill_in?(term)
   #page.find_element("//input[contains(@placeholder,'typeaheadInput')]").fill_in?(term)
-  driver.find_element(:xpath, '//*[@id="typeaheadInput"]')
+  driver.find_element(:xpath, '//*[@id="typeaheadInput"]').send_keys term
   sleep(5)
 end
 
 When("I enter {string} into the location search field") do |location|
   #fill_in (:id, "google-location-search"), with: location # Google's search input name is "q"
   #page.find_by_id("google-location-search").fill_in?(location)
-  driver.find_element(:xpath, '//*[@id="google-location-search"]')
+  driver.find_element(:xpath, '//*[@id="google-location-search"]').send_keys location
   sleep(5)
+  driver.find_element(:xpath, '//*[@id="google-location-search"]').submit
+  sleep(10)
 end
 
 When("I fill in the password field") do
