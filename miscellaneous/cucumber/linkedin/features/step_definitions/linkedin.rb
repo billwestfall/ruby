@@ -7,7 +7,7 @@ require 'rspec'
 
 date = Time.now.strftime("%Y-%m-%d-%H-%M-%S")
 #browser = Selenium::Browser.new :chrome
-driver = Selenium::WebDriver.for :chrome
+#driver = Selenium::WebDriver.for :chrome
 
 Given('I am on the LinkedIn homepage') do
 #    visit 'https://www.google.com'
