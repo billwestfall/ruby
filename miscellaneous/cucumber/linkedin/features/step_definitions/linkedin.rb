@@ -7,7 +7,7 @@ require 'rspec'
 
 date = Time.now.strftime("%Y-%m-%d-%H-%M-%S")
 #browser = Selenium::Browser.new :chrome
-#driver = Selenium::WebDriver.for :chrome
+driver = Selenium::WebDriver.for :chrome
 
 Given('I am on the LinkedIn homepage') do
 #    visit 'https://www.google.com'
@@ -27,7 +27,8 @@ Given('I am on the Dice login homepage') do
 #    visit 'https://www.google.com'
 #    @profile_id = ENV['MYSITE']
     @profile_id = "www.dice.com/dashboard/login"
-    visit "https://#{@profile_id}"
+    #visit "https://#{@profile_id}"
+    driver.navigate.to 'www.dice.com/dashboard/login'
 end
 
 When /^I enter "([^"]*)" in the Search window$/ do |search|
@@ -47,8 +48,8 @@ When("I enter {string} into the search field") do |search_term|
 end
 
 When("I enter {string} into the email field") do |email|
-  fill_in "email", with: email # Google's search input name is "q"
-  #driver.find_element(:id, 'email').send_keys email
+  #fill_in "email", with: email # Google's search input name is "q"
+  driver.find_element(:name, 'email').send_keys email
 end
 
 When("I enter {string} into the term search field") do |term|
@@ -66,8 +67,8 @@ end
 
 When("I fill in the password field") do
   pwd = ENV['DICE_PWD']
-  fill_in "password", with: pwd # Google's search input name is "q"
-  #driver.find_element(:id, 'password').send_keys pwd
+  #fill_in "password", with: pwd # Google's search input name is "q"
+  driver.find_element(:name, 'password').send_keys pwd
 end
 
 When("I click the {string} button") do |button_name|
