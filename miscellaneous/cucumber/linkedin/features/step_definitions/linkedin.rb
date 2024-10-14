@@ -59,14 +59,14 @@ When("I enter {string} into the term search field") do |term|
   #page.find_by_id("typeaheadInput").fill_in?(term)
   #page.find_element(By.XPATH, "//input[contains(@placeholder,'typeaheadInput')]").fill_in?(term)
   #page.find_element("//input[contains(@placeholder,'typeaheadInput')]").fill_in?(term)
-  find_element(:xpath, '//*[@id="typeaheadInput"]')
+  driver.find_element(:xpath, '//*[@id="typeaheadInput"]')
   sleep(5)
 end
 
 When("I enter {string} into the location search field") do |location|
   #fill_in (:id, "google-location-search"), with: location # Google's search input name is "q"
   #page.find_by_id("google-location-search").fill_in?(location)
-  find_element(:xpath, '//*[@id="google-location-search"]')
+  driver.find_element(:xpath, '//*[@id="google-location-search"]')
   sleep(5)
 end
 
