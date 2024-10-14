@@ -28,7 +28,7 @@ Given('I am on the Dice login homepage') do
 #    @profile_id = ENV['MYSITE']
     @profile_id = "www.dice.com/dashboard/login"
     #visit "https://#{@profile_id}"
-    driver.navigate.to 'www.dice.com/dashboard/login'
+    driver.navigate.to 'https://www.dice.com/dashboard/login'
 end
 
 When /^I enter "([^"]*)" in the Search window$/ do |search|
