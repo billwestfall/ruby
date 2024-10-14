@@ -3,7 +3,7 @@ require 'selenium-webdriver'
 require 'rspec'
 require 'watir'
 #require 'watir-webdriver'
-from selenium.webdriver.common.by import By
+include selenium.webdriver.common.by import By
 
 date = Time.now.strftime("%Y-%m-%d-%H-%M-%S")
 #browser = Selenium::Browser.new :chrome
