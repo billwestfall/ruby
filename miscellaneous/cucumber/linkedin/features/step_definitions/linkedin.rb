@@ -69,7 +69,7 @@ When("I enter {string} into the location search field") do |location|
   driver.find_element(:xpath, '//*[@id="google-location-search"]').send_keys location
   sleep(5)
   driver.find_element(:xpath, '//*[@id="google-location-search"]').submit
-  sleep(10)
+  sleep(5)
 end
 
 When("I fill in the password field") do
@@ -86,7 +86,7 @@ When("I click the {string} button") do |button_name|
 end
 
 When("I then click the search button") do
-  driver.find(:id, 'submitSearch-button').click
+  driver.find_element(:id, 'submitSearch-button').click
   sleep(10)
 end
 
