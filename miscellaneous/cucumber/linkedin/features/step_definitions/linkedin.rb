@@ -47,7 +47,8 @@ When("I enter {string} into the search field") do |search_term|
 end
 
 When("I enter {string} into the email field") do |email|
-  fill_in "email", with: email # Google's search input name is "q"
+  #fill_in "email", with: email # Google's search input name is "q"
+  driver.find_element(:id, 'email').send_keys email
 end
 
 When("I enter {string} into the term search field") do |term|
@@ -65,11 +66,13 @@ end
 
 When("I fill in the password field") do
   pwd = ENV['DICE_PWD']
-  fill_in "password", with: pwd # Google's search input name is "q"
+  #fill_in "password", with: pwd # Google's search input name is "q"
+  driver.find_element(:id, 'password').send_keys pwd
 end
 
 When("I click the {string} button") do |button_name|
-  find(:css, '.absolute').click
+  #find(:css, '.absolute').click
+  driver.find_element(:css, '.absolute').click
 end
 
 When("I click the location button") do
