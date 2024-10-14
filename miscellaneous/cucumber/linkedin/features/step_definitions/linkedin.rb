@@ -72,8 +72,8 @@ When("I fill in the password field") do
 end
 
 When("I click the {string} button") do |button_name|
-  find(:css, '.absolute').click
-  #driver.find_element(:css, '.absolute').click
+  #find(:css, '.absolute').click
+  driver.find_element(:css, '.absolute').click
 end
 
 When("I click the location button") do
