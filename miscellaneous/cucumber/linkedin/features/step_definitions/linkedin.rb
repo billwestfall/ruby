@@ -3,7 +3,7 @@ require 'selenium-webdriver'
 require 'rspec'
 require 'watir'
 #require 'watir-webdriver'
-include selenium.webdriver.common.by import By
+#include selenium.webdriver.common.by import By
 
 date = Time.now.strftime("%Y-%m-%d-%H-%M-%S")
 #browser = Selenium::Browser.new :chrome
@@ -52,7 +52,8 @@ end
 When("I enter {string} into the term search field") do |term|
   #fill_in (:id, "typeaheadInput"), with: term # Google's search input name is "q"
   #page.find_by_id("typeaheadInput").fill_in?(term)
-  page.find_element(By.XPATH, "//input[contains(@placeholder,'typeaheadInput')]").fill_in?(term)
+  #page.find_element(By.XPATH, "//input[contains(@placeholder,'typeaheadInput')]").fill_in?(term)
+  page.find_element("//input[contains(@placeholder,'typeaheadInput')]").fill_in?(term)
 end
 
 When("I enter {string} into the location search field") do |location|
