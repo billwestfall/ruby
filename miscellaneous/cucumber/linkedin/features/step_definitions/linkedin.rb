@@ -4,7 +4,7 @@ require 'watir'
 #require 'watir-webdriver'
 
 date = Time.now.strftime("%Y-%m-%d-%H-%M-%S")
-browser = Watir::Browser.new :chrome
+browser = Selenium::Browser.new :chrome
 
 Given('I am on the LinkedIn homepage') do
 #    visit 'https://www.google.com'
