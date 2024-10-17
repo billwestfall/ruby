@@ -31,6 +31,14 @@ Given('I am on the Dice login homepage') do
     driver.navigate.to 'https://www.dice.com/dashboard/login'
 end
 
+Given('I am on the Dice user homepage') do
+#    visit 'https://www.google.com'
+#    @profile_id = ENV['MYSITE']
+#    @profile_id = "www.dice.com/dashboard/login"
+    #visit "https://#{@profile_id}"
+    driver.navigate.to 'https://www.dice.com/home/home-feed'
+end
+
 When /^I enter "([^"]*)" in the Search window$/ do |search|
   fill_in 'APjFqb', :with => search
 end
