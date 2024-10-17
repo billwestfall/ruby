@@ -108,6 +108,7 @@ When("I check the Easy Apply box") do
   #driver.find_elements_by_css_selector("[aria-label='Filter Search Results by Easy Apply']").set(true)
   driver.find_element(:css, "[aria-label='Filter Search Results by Easy Apply']").click
   sleep(5)
+  driver.find_element(:css, "[aria-label='Filter Search Results by Easy Apply']").should be_checked
 end
 
 Then("I should see results related to {string}") do |expected_result|
