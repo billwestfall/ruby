@@ -113,7 +113,7 @@ end
 
 When("I click the job link") do
   #driver.find_elements_by_css_selector("[aria-label='Filter Search Results by Easy Apply']").set(true)
-  driver.find_element(:xpath, "//p[contains(.,'dhi-search-card[1]')]").click
+  driver.find_element(:xpath, "//div[@id='3']//li/a[contains(text(), 'dhi-search-card[1]')]").click
   sleep(5)
   #driver.find_element(:css, "[aria-label='Filter Search Results by Easy Apply']").should be_checked
 end
