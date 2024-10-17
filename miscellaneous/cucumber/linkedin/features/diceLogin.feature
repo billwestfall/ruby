@@ -9,3 +9,4 @@ Scenario: Navigate to the website
   	When I enter "Bellevue, WA, USA" into the location search field
    	When I then click the search button
     	When I check the Easy Apply box
+	When I click the job link
