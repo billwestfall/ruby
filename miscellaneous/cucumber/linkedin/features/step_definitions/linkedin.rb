@@ -37,7 +37,7 @@ Given('I am on the Dice user homepage') do
 #    @profile_id = ENV['MYSITE']
 #    @profile_id = "www.dice.com/dashboard/login"
     #visit "https://#{@profile_id}"
-    driver.navigate.to 'https://www.dice.com/home/home-feed'
+    driver.navigate.to 'https://www.dice.com/jobs'
     sleep(10)
 end
 
