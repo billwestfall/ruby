@@ -105,7 +105,7 @@ When("I click the location button") do
 end
 
 When("I check the Easy Apply box") do
-  driver.find_elements_by_css_selector("[aria-label="Filter Search Results by Easy Apply"]").set(true)
+  driver.find_elements_by_css_selector("[aria-label='Filter Search Results by Easy Apply']").set(true)
   sleep(5)
 end
 
