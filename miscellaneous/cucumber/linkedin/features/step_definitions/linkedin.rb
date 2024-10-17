@@ -77,7 +77,7 @@ When("I fill in the password field") do
   #fill_in "password", with: pwd # Google's search input name is "q"
   driver.find_element(:name, 'password').send_keys pwd
   driver.find_element(:name, 'password').submit
-  sleep(10)
+  sleep(15)
 end
 
 When("I click the {string} button") do |button_name|
