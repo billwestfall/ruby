@@ -104,6 +104,11 @@ When("I click the location button") do
   find(:id, 'submitSearch-button').click
 end
 
+When("I check the Easy Apply box") do
+  driver.find_elements_by_css_selector("[aria-label="Filter Search Results by Easy Apply"]").set(true)
+  sleep(5)
+end
+
 Then("I should see results related to {string}") do |expected_result|
   # Wait for the page to load and check that it includes the expected text.
   expect(page).to have_content(expected_result)
