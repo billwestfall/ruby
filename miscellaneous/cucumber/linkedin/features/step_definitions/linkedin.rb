@@ -111,6 +111,13 @@ When("I check the Easy Apply box") do
   #driver.find_element(:css, "[aria-label='Filter Search Results by Easy Apply']").should be_checked
 end
 
+When("I click the job link") do
+  #driver.find_elements_by_css_selector("[aria-label='Filter Search Results by Easy Apply']").set(true)
+  driver.find(:xpath, "//p[contains(.,'dhi-search-card[1]')]".click
+  sleep(5)
+  #driver.find_element(:css, "[aria-label='Filter Search Results by Easy Apply']").should be_checked
+end
+
 Then("I should see results related to {string}") do |expected_result|
   # Wait for the page to load and check that it includes the expected text.
   expect(page).to have_content(expected_result)
